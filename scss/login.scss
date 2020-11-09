@@ -1,0 +1,77 @@
+@import "_color.scss";
+@import "_base.scss";
+
+body {
+    background-color: #F3F3F3;
+}
+
+.nav-active-home {
+    border: none;
+}
+
+.form-control,
+.signup-btn,
+.google-btn,
+.login,
+.fb-btn {
+    width: 80%;
+}
+
+.form-main {
+    width: 50%;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 4px;
+    text-align: center;
+
+
+    h5 {
+        font-size: 18px;
+        color: $black-secondary;
+    }
+}
+
+.signup-btn {
+    color: #fff;
+    background-color: $blue-primary;
+}
+
+.signup-btn:hover {
+    color: #fff;
+    background-color: #2195e9;
+    transition: .3s;
+}
+
+.google-btn {
+    border: 2px solid #CFD2D4;
+
+}
+
+.google-btn:hover {
+    border: 2px solid #CFD2D4;
+    background-color: #f3f3f3;
+    opacity: .7;
+    transition: .3s;
+}
+
+
+.fb-btn {
+    background-color: #3A5998;
+    color: #fff;
+}
+
+.fb-btn:hover {
+    color: #fff;
+    background-color: #33508b;
+    transition: .3s;
+}
+
+.form-control::placeholder {
+    color: #919191;
+    font-family: $font-light;
+}
+
+
+footer {
+    background-color: #fff;
+}
