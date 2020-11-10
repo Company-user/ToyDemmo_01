@@ -18,7 +18,7 @@ var nav =
 
                     <div class="user-item">
                         <img src="img/layout/user.svg" alt="">
-                        <a href="#" class="btn text-white btn-hover" role="button" aria-pressed="true">註冊</a>
+                        <a href="signup.html" class="btn text-white btn-hover" role="button" aria-pressed="true">註冊</a>
                         <span class="vertical-line"></span>
                         <a href="login.html" class="btn text-white btn-hover" role="button" aria-pressed="true">登入</a>
 
