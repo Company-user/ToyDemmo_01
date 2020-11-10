@@ -17,7 +17,18 @@ var nav =
                     </div>
 
                     <div class="user-item">
-                        <img src="img/layout/user.svg" alt="">
+                    <div class="dropdown dropdown-language">
+                        <button class="btn btn-transparent dropdown-toggle text-white focus-btn language-btn"
+                            type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            <img src="img/layout/user.svg" alt="">
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-language" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item dropdown-item-language" href="member.html">會員中心</a>
+                            <a class="dropdown-item dropdown-item-language" href="#">幫助中心</a>
+                        </div>
+                    </div>
+                    
                         <a href="signup.html" class="btn text-white btn-hover" role="button" aria-pressed="true">註冊</a>
                         <span class="vertical-line"></span>
                         <a href="login.html" class="btn text-white btn-hover" role="button" aria-pressed="true">登入</a>

@@ -15,7 +15,7 @@
 
 <body>
     <script src="js/nav.js"></script>
-    
+
 
     <div class="container d-flex justify-content-center  py-5">
         <div class="form-main  d-flex flex-column align-items-center">
@@ -24,7 +24,7 @@
             <hr class="line">
             <h5 class="mt-3">登入</h5>
             <a href="#" class="btn btn-lg google-btn-group mb-3" role="button">
-                <img src="img/login/google.svg"  alt="">
+                <img src="img/login/google.svg" alt="">
                 <span class="text-center"> Google </span>
             </a>
 
@@ -51,32 +51,14 @@
         </div>
     </div>
 
+    <script src="js/jquery.slim.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="js/fixed-icon.js"></script>
     <script src="js/footer.js"></script>
 
 
-    <script src="js/jquery.slim.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
-
-    <script>
-        var btn = $('.top-btn');
-
-        $(window).scroll(function () {
-            if ($(window).scrollTop() > 300) {
-                btn.addClass('show');
-            } else {
-                btn.removeClass('show');
-            }
-        });
-
-        btn.on('click', function (e) {
-            e.preventDefault();
-            $('html, body').animate({ scrollTop: 0 }, '300');
-        });
-
-    </script>
 
 </body>
 

@@ -29,6 +29,10 @@ body {
   min-width: 5rem;
 }
 
+.dropdown:hover>.dropdown-menu {
+  display: block;
+}
+
 //取消預設fosus框
 .focus-btn,
 .btn:focus {
@@ -36,7 +40,8 @@ body {
 }
 
 .language-btn {
-  padding-left: 0;
+ padding-left: 0;
+ padding-right: 0;
 }
 
 .vertical-line {
@@ -146,6 +151,7 @@ body {
     text-decoration: none;
   }
 }
+
 
 .form-inline {
   .search-bar {
