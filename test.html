@@ -1,5 +1,18 @@
-var nav =
-    `<nav>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toy_Demo1</title>
+    <link rel="icon" href="img/layout/logo-icon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/product.min.css">
+</head>
+
+<body>
+    <nav>
         <div class="nav-top-bar">
             <div class="container-fluid bg-orange">
                 <div class="container d-flex  justify-content-between ">
@@ -16,24 +29,23 @@ var nav =
                         </div>
                     </div>
 
-                    
-                    <div class="dropdown dropdown-language">
-                        <button class="btn btn-transparent dropdown-toggle text-white focus-btn language-btn"
-                            type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
-                            aria-expanded="false">
-                            <img src="img/layout/user.svg" alt="">
-                        </button>
-                        <div class="dropdown-menu dropdown-menu-language" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item dropdown-item-language" href="member.html">會員中心</a>
-                            <a class="dropdown-item dropdown-item-language" href="#">幫助中心</a>
+                    <div class="user-item">
+                        <div class="dropdown dropdown-language">
+                            <button class="btn btn-transparent dropdown-toggle text-white focus-btn language-btn"
+                                type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
+                                <img src="img/layout/user.svg" alt="">
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-language" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item dropdown-item-language" href="member.html">會員中心</a>
+                                <a class="dropdown-item dropdown-item-language" href="#">幫助中心</a>
+                            </div>
                         </div>
-                   
-                    
-                        <a href="signup.html" class="btn text-white btn-hover" role="button" aria-pressed="true">註冊</a>
-                        <span class="vertical-line"></span>
-                        <a href="login.html" class="btn text-white btn-hover" role="button" aria-pressed="true">登入</a>
-
                     </div>
+                    <a href="signup.html" class="btn text-white btn-hover" role="button" aria-pressed="true">註冊</a>
+                    <span class="vertical-line"></span>
+                    <a href="login.html" class="btn text-white btn-hover" role="button" aria-pressed="true">登入</a>
+
                 </div>
             </div>
         </div>
@@ -59,7 +71,8 @@ var nav =
                         </li>
                         <span class="vertical-line-2"></span>
                         <li class="nav-item">
-                            <a class="nav-link header-nav-link text-center nav-active-product" href="productlist.html">產品</a>
+                            <a class="nav-link header-nav-link text-center nav-active-product"
+                                href="productlist.html">產品</a>
                         </li>
                         <span class="vertical-line-2"></span>
                         <li class="nav-item">
@@ -97,23 +110,23 @@ var nav =
                                     <h6 class="h6-text">最近加入的商品</h6>
                                     <div class="dropdown-divider"></div>
                                     <a href="product.html" class="d-flex">
-                                     <div class="dropdown-item car-list-dropdown-item p-2"  type="button">
-                                        <div class="d-flex">
-                                            <div class="car-item-img mr-3">
-                                                <img src="img/layout/car-item-1.jpg" class="car-list-item" alt="">
-                                            </div>
-                                            <div class="car-list-info ">
-                                                <h5>玩具總動員方形收納箱...</h5>
-                                                <h6>規格:小丑</h6>
-                                                <h4>$1,200</h4>
-                                            </div>
-                                            <div class="trash">
-                                                <a href="#"><i class="fas fa-trash"></i></a>
+                                        <div class="dropdown-item car-list-dropdown-item p-2" type="button">
+                                            <div class="d-flex">
+                                                <div class="car-item-img mr-3">
+                                                    <img src="img/layout/car-item-1.jpg" class="car-list-item" alt="">
+                                                </div>
+                                                <div class="car-list-info ">
+                                                    <h5>玩具總動員方形收納箱...</h5>
+                                                    <h6>規格:小丑</h6>
+                                                    <h4>$1,200</h4>
+                                                </div>
+                                                <div class="trash">
+                                                    <a href="#"><i class="fas fa-trash"></i></a>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
                                     </a>
-                                   
+
                                 </div>
                             </div>
                         </li>
@@ -121,13 +134,9 @@ var nav =
                 </div>
             </div>
         </nav>
-       
+
     </nav>
 
-    
-    
-    
-    `
+</body>
 
-
-document.write(nav);
+</html>
