@@ -1,5 +1,5 @@
 var nav =
-`<nav>
+    `<nav>
         <div class="nav-top-bar">
             <div class="container-fluid bg-orange">
                 <div class="container d-flex  justify-content-between ">
@@ -16,7 +16,7 @@ var nav =
                         </div>
                     </div>
 
-                    <div class="user-item">
+                   
                     <div class="dropdown dropdown-language">
                         <button class="btn btn-transparent dropdown-toggle text-white focus-btn language-btn"
                             type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
@@ -27,7 +27,7 @@ var nav =
                             <a class="dropdown-item dropdown-item-language" href="member.html">會員中心</a>
                             <a class="dropdown-item dropdown-item-language" href="#">幫助中心</a>
                         </div>
-                    </div>
+                    
                     
                         <a href="signup.html" class="btn text-white btn-hover" role="button" aria-pressed="true">註冊</a>
                         <span class="vertical-line"></span>
@@ -130,4 +130,4 @@ var nav =
     `
 
 
-    document.write(nav);
+document.write(nav);
