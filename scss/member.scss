@@ -1,0 +1,44 @@
+@import "_color.scss";
+@import "_base.scss";
+
+body {
+  background-color: #f3f3f3;
+}
+
+.nav-active-home {
+  border: none;
+}
+
+.nav-tabs {
+  font-size: 15px;
+  border:none;
+  .nav-link {
+    color: $black-secondary;
+    width: 199px;
+    height: 62px;
+    background-color: #e7e7e7;
+    text-align: center;
+    line-height: 62px;
+    padding: 0;
+    border:none;
+  }
+  .nav-link.active{
+    color: #fff;
+    background-color: $orange-secondary;
+    border:none;
+  }
+}
+
+.tab-content{
+  .name{
+    font-size: 20px;
+  }
+  .level{
+    color: #fff;
+    background-color:#00C4E8;
+    padding: 5px 1rem;
+    border-radius: 50px;
+  }
+
+}
+

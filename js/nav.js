@@ -28,10 +28,9 @@ var nav =
                             <a class="dropdown-item dropdown-item-language" href="#">幫助中心</a>
                         </div>
                     
-                    
                         <a href="signup.html" class="btn text-white btn-hover" role="button" aria-pressed="true">註冊</a>
                         <span class="vertical-line"></span>
-                        <a href="login.html" class="btn text-white btn-hover" role="button" aria-pressed="true">登入aaaa</a>
+                        <a href="login.html" class="btn text-white btn-hover" role="button" aria-pressed="true">登入</a>
                     </div>
 
                     </div>

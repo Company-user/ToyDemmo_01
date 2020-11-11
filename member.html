@@ -8,7 +8,7 @@
     <link rel="icon" href="img/layout/logo-icon.svg" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/nember.min.css">
+    <link rel="stylesheet" href="css/member.min.css">
 </head>
 
 <body>
@@ -17,22 +17,68 @@
 <script src="js/nav.js"></script>
 
 <div class="container">
-    <nav>
+    <nav class="mt-4 mb-4">
         <div class="nav nav-tabs" id="nav-tab" role="tablist">
             <a class="nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab"
-                aria-controls="nav-home" aria-selected="true">Home</a>
+                aria-controls="nav-home" aria-selected="true">個人資訊</a>
             <a class="nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab"
-                aria-controls="nav-profile" aria-selected="false">Profile</a>
+                aria-controls="nav-profile" aria-selected="false">商店購物金</a>
             <a class="nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab"
-                aria-controls="nav-contact" aria-selected="false">Contact</a>
+                aria-controls="nav-contact" aria-selected="false">訊息</a>
+            <a class="nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab"
+                aria-controls="nav-contact" aria-selected="false">訂單</a>
+            <a class="nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab"
+                aria-controls="nav-contact" aria-selected="false">追蹤清單</a>
         </div>
     </nav>
-    <div class="tab-content" id="nav-tabContent">
-        <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">...</div>
+    <div class="tab-content mb-3" id="nav-tabContent">
+        <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+            <div class="member-name-group d-flex align-items-center mb-3">
+                <img src="img/member/user.svg" alt="">
+                <p class="name ml-3 mr-4 mb-0">Paual</p>
+                <div class="level">
+                    一般會員
+                </div>
+            </div>
+
+            <div class="member-file-group d-flex align-items-center">
+                <img src="img/member/file.svg" alt="">
+                <p class="ml-3 mr-4 mb-0">會員資料</p>
+                <a href="" class="button">編輯</a>
+            </div>
+
+
+            <form action="">
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label for="name">姓名</label>
+                            <input type="text" class="name" id="name" placeholder="請輸入姓名">
+        
+                            <label for="email">電子郵件</label>
+                            <input type="text" class="email" id="email" placeholder="請輸入email">
+                        </div>
+                        <div class="col-md-6"></div>
+                    </div>
+                   
+
+                    
+                    
+
+
+
+                </div>
+            </form>
+
+
+        </div>
         <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">...</div>
         <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">...</div>
     </div>
 </div>
+
+
 
 
 <script src="js/jquery.slim.min.js"></script>
