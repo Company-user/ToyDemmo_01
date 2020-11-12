@@ -16,7 +16,7 @@
 </body>
 <script src="js/nav.js"></script>
 
-<div class="container">
+<div class="container bg-white pl-0 pr-0 ">
     <nav class="mt-4 mb-4">
         <div class="nav nav-tabs" id="nav-tab" role="tablist">
             <a class="nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab"
@@ -33,49 +33,107 @@
     </nav>
     <div class="tab-content mb-3" id="nav-tabContent">
         <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-            <div class="member-name-group d-flex align-items-center mb-3">
+            <div class="member-name-group d-flex align-items-center mb-5">
                 <img src="img/member/user.svg" alt="">
-                <p class="name ml-3 mr-4 mb-0">Paual</p>
+                <p class="member ml-3 mr-4 mb-0">Paual</p>
                 <div class="level">
                     一般會員
                 </div>
             </div>
 
-            <div class="member-file-group d-flex align-items-center">
+            <div class="member-file-group d-flex align-items-center mb-4">
                 <img src="img/member/file.svg" alt="">
                 <p class="ml-3 mr-4 mb-0">會員資料</p>
-                <a href="" class="button">編輯</a>
+                <a href="#" class="edit-btn">編輯</a>
             </div>
 
-
-            <form action="">
-
+            <form action="#">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-6">
-                            <label for="name">姓名</label>
-                            <input type="text" class="name" id="name" placeholder="請輸入姓名">
-        
-                            <label for="email">電子郵件</label>
-                            <input type="text" class="email" id="email" placeholder="請輸入email">
+                            <div class="row input-item ">
+                                <label for="name" class="col-md-2">姓名</label>
+                                <input type="text" class="name col-md-6" id="name" placeholder="請輸入姓名">
+                            </div>
+
+                            <div class="row input-item">
+                                <label for="email" class="col-md-2 ">電子郵件</label>
+                                <input type="text" class="email col-md-6" id="email" placeholder="請輸入email">
+                            </div>
+
+                            <div class="row input-item">
+                                <label for="email" class="col-md-2">性別</label>
+                                <div class="col-md-6 d-flex">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="exampleRadios"
+                                            id="exampleRadios1" value="option1" checked>
+                                        <label class="form-check-label" for="exampleRadios1">
+                                            男
+                                        </label>
+                                    </div>
+
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="exampleRadios"
+                                            id="exampleRadios2" value="option2">
+                                        <label class="form-check-label" for="exampleRadios2">
+                                            女
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
-                        <div class="col-md-6"></div>
+
+                        <div class="col-md-6">
+                            <div class="row input-item">
+                                <label for="tel" class="col-md-2">電話號碼</label>
+                                <input type="tel" class="tel col-md-6" id="tel" placeholder="請輸入手機">
+                            </div>
+
+                            <div class="row input-item ">
+                                <label for="address" class="col-md-2">地址</label>
+                                <input type="text" class="address col-md-6" id="address" placeholder="請輸入地址">
+                            </div>
+
+                            <div class="row input-item ">
+                                <label for="date" class="col-md-2">生日</label>
+                                <input type="date" class="date col-md-6" id="date" placeholder="請輸入姓名"
+                                    style="color: #a0a3a5;">
+                            </div>
+                        </div>
                     </div>
-                   
 
-                    
-                    
-
-
+                    <div class="subscribe-item">
+                        <div class="row">
+                            <div class="col-2 col">
+                                <p>已訂閱電子郵件通知</p>
+                            </div>
+                            <div class="col-6 col">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" name="gridcheckboxs"
+                                        id="gridcheckboxs1" value="option3">
+                                    <label class="form-check-label" for="gridcheckboxs1">
+                                        發送至電子郵件
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" name="gridcheckboxs"
+                                        id="gridcheckboxs2" value="option4">
+                                    <label class="form-check-label" for="gridcheckboxs2">
+                                        訂閱SMS
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
                 </div>
             </form>
-
-
         </div>
-        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">...</div>
-        <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">...</div>
+
     </div>
+
+</div>
 </div>
 
 

@@ -9,36 +9,124 @@ body {
   border: none;
 }
 
+.container {
+  padding-left: 8px;
+}
+
 .nav-tabs {
   font-size: 15px;
-  border:none;
+  border: none;
+  border-radius: 0;
   .nav-link {
     color: $black-secondary;
-    width: 199px;
+    width: 20%;
     height: 62px;
     background-color: #e7e7e7;
     text-align: center;
     line-height: 62px;
     padding: 0;
-    border:none;
+    border: none;
   }
-  .nav-link.active{
+  .nav-link.active {
     color: #fff;
     background-color: $orange-secondary;
-    border:none;
+    border: none;
   }
 }
 
-.tab-content{
-  .name{
+.tab-content {
+  border-bottom: 5px solid $blue-light;
+  .tab-pane {
+    margin-left: 24px;
+  }
+  .member {
     font-size: 20px;
   }
-  .level{
+  .level {
     color: #fff;
-    background-color:#00C4E8;
+    background-color: #00c4e8;
     padding: 5px 1rem;
     border-radius: 50px;
   }
-
+  .edit-btn {
+    color: $blue-primary;
+  }
 }
 
+.input-item {
+  label {
+    display: block;
+    width: 100%;
+    color: $black-light;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+input {
+  display: block;
+  border: none;
+  border-bottom: 1px solid#E9E9E9;
+  margin-bottom: 24px;
+}
+
+:focus {
+  outline: none;
+}
+
+::placeholder,
+.date {
+  color: #a0a3a5;
+}
+
+input::-webkit-calendar-picker-indicator {
+  color: rgba(160, 163, 165, 1) !important;
+}
+
+.form-check {
+  margin-right: 20px;
+}
+
+.subscribe {
+  display: block;
+}
+
+.subscribe-item {
+  margin-top: 15px;
+  margin-bottom: 50px;
+  color: $black-light;
+  p {
+    color: $orange-primary;
+  }
+  .col {
+    padding-left: 8px;
+  }
+  .form-check{
+    margin-bottom: 8px;
+  }
+}
+
+footer{
+position: fixed;
+width: 100%;
+bottom: 0;
+left: 0;
+
+}
+//修改 gutters --start
+.custom-gutters {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.row {
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+.col-md-3 {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+//修改 gutters --end
