@@ -2,7 +2,7 @@ var nav =
     `<nav>
         <div class="nav-top-bar">
             <div class="container-fluid bg-orange">
-                <div class="container d-flex  justify-content-between ">
+                <div class="container d-flex justify-content-between ">
                     <div class="dropdown dropdown-language">
                         <button class="btn btn-transparent dropdown-toggle text-white focus-btn language-btn"
                             type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
@@ -32,13 +32,12 @@ var nav =
                         <span class="vertical-line"></span>
                         <a href="login.html" class="btn text-white btn-hover" role="button" aria-pressed="true">登入</a>
                     </div>
-
                     </div>
                 </div>
             </div>
         </div>
 
-        <nav class="navbar navbar-expand-lg navbar-light bg-white bottom-border">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white bottom-border p-0">
             <div class="container">
                 <a class="navbar-brand" href="index.html"><img src="img/layout/logo.svg" alt=""></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
@@ -49,27 +48,27 @@ var nav =
 
                 <div class="collapse navbar-collapse " id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto">
-                        <span class="vertical-line-3"></span>
+                        
                         <li class="nav-item header-nav-item">
                             <a class="nav-link header-nav-link text-center nav-active-home" href="index.html">首頁</a>
                         </li>
-                        <span class="vertical-line-2"></span>
+                        
                         <li class="nav-item">
                             <a class="nav-link header-nav-link text-center nav-active-about" href="">關於</a>
                         </li>
-                        <span class="vertical-line-2"></span>
+                        
                         <li class="nav-item">
                             <a class="nav-link header-nav-link text-center nav-active-product" href="productlist.html">產品</a>
                         </li>
-                        <span class="vertical-line-2"></span>
+                        
                         <li class="nav-item">
                             <a class="nav-link header-nav-link text-center nav-active-sale" href="#">優惠專區</a>
                         </li>
-                        <span class="vertical-line-2"></span>
+                        
                         <li class="nav-item">
                             <a class="nav-link header-nav-link text-center nav-active-contact" href="#">聯絡我們</a>
                         </li>
-                        <span class="vertical-line-2"></span>
+                        
                         <li class="nav-item-2">
                             <div class="dropdown">
                                 <button class="btn" type="button" data-toggle="dropdown" aria-haspopup="true"
@@ -85,7 +84,7 @@ var nav =
                                 </div>
                             </div>
                         </li>
-                        <span class="vertical-line-2"></span>
+                        
                         <li class="nav-item-dropdown">
                             <div class="dropdown">
                                 <button class="btn btn-cart " type="button" data-toggle="dropdown" aria-haspopup="true"
