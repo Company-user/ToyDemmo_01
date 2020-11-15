@@ -5,15 +5,17 @@ body {
   background-color: #f3f3f3;
 }
 
-.nav-active-home {
-  border: none;
-}
-
 
 .email-btn-group,
 .google-btn-group,
-.fb-btn-group {
+.fb-btn-group,
+.login-btn {
   width: 80%;
+}
+
+.login-btn {
+  color: $black-secondary;
+  margin: 16px auto;
 }
 
 .form-main {
@@ -33,11 +35,13 @@ body {
 .google-btn-group {
   position: relative;
   border: 2px solid #cfd2d4;
+
   img {
     position: absolute;
     left: 15px;
     top: 10px;
   }
+
   &:hover {
     border: 2px solid #cfd2d4;
     background-color: #f3f3f3;
@@ -50,11 +54,13 @@ body {
   position: relative;
   background-color: #3a5998;
   color: #fff;
+
   img {
     position: absolute;
     left: 15px;
     top: 12px;
   }
+
   &:hover {
     color: #fff;
     background-color: #33508b;
@@ -62,38 +68,41 @@ body {
   }
 }
 
-.email-btn-group{
-    position: relative;
-    background-color: #FF4B43;
+.email-btn-group {
+  position: relative;
+  background-color: #FF4B43;
+  color: #fff;
+
+  img {
+    position: absolute;
+    left: 15px;
+    top: 12px;
+  }
+
+  &:hover {
     color: #fff;
-    img {
-        position: absolute;
-        left: 15px;
-        top: 12px;
-      }
-      &:hover {
-        color: #fff;
-        background-color: #f03d34;
-        transition: 0.3s;
-      }
+    background-color: #f03d34;
+    transition: 0.3s;
+  }
 }
 
 .line {
-    width: 100%;
-    height: 1px;
-    background-color: #e4e4e4;
-    border: none;
-  }
-
-footer{
-    position:fixed;
-    width: 100%;
-    left:0;
-    bottom: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #e4e4e4;
+  border: none;
 }
 
+footer {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+}
 
-
-
-
-
+@media (max-width:1600px) {
+  footer {
+    position: static;
+    margin-top: 30px;
+  }
+}

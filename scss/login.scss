@@ -5,9 +5,6 @@ body {
   background-color: #f3f3f3;
 }
 
-.nav-active-home {
-  border: none;
-}
 
 .form-control,
 .signup-btn,
@@ -32,7 +29,8 @@ body {
 .signup-btn {
   color: #fff;
   background-color: $blue-primary;
-  &:hover{
+
+  &:hover {
     color: #fff;
     background-color: #2195e9;
     transition: 0.3s;
@@ -43,11 +41,13 @@ body {
 .google-btn-group {
   position: relative;
   border: 2px solid #cfd2d4;
+
   img {
     position: absolute;
     left: 15px;
     top: 10px;
   }
+
   &:hover {
     border: 2px solid #cfd2d4;
     background-color: #f3f3f3;
@@ -60,11 +60,13 @@ body {
   position: relative;
   background-color: #3a5998;
   color: #fff;
+
   img {
     position: absolute;
     left: 15px;
     top: 12px;
   }
+
   &:hover {
     color: #fff;
     background-color: #33508b;
@@ -84,11 +86,13 @@ body {
   margin-bottom: 0;
 }
 
-form {
+.form-width {
   width: 80%;
+
   .form-group {
     margin-bottom: 0;
   }
+
   .login {
     width: 100%;
     margin-top: 2rem;
@@ -103,6 +107,5 @@ form {
 }
 
 .forget-password {
-  color: #51b6ff;
+  color: $black-light;
 }
-
