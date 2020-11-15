@@ -8,11 +8,20 @@
   src: url(../fonts/msjh.ttc);
 }
 
-$font-light: "Microsoft JhengHei ight";
-$font-bold: "Microsoft JhengHei bold";
+@font-face {
+  font-family: "Noto Sans";
+  src: url(../fonts/NotoSansTC-Regular.otf);
+}
+
+$font-light: "Noto Sans";
+$font-bold: "Noto Sans";
 
 body {
-  font-family: "arial", "Microsoft JhengHei bold", "-apple-system-", "segoe UI", sans-serif;
+  font-family: "Noto Sans",
+    "Microsoft JhengHei bold",
+    "-apple-system-",
+    "segoe UI",
+    sans-serif;
 }
 
 .bg-orange {
