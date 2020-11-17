@@ -175,13 +175,23 @@
         width: 15%;
     }
 
+    .page-link {
+        line-height: normal;
+        border-radius: 3px;
+    }
+
     .page-item-main {
         width: 24%;
-        line-height: 2;
+        vertical-align: middle;
+        // border: 1px solid #dee2e6;
     }
+
 
     p {
         color: #8B8B8B;
+        margin-bottom: 0;
+        padding-top: 6px;
+
 
 
     }
