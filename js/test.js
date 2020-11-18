@@ -1,12 +1,7 @@
-var fixedicon = `<a href="#" class="talk-btn">
-        <img src="img/layout/talk.svg" alt="">
-    </a>
 
-    <a href="#" class="top-btn">
-        <img src="img/layout/top-icon.svg" alt="">
-    </a>
+
     
-    <script>
+    `<script>
     var btn = $('.top-btn');
 
     console.log("",btn);
@@ -23,14 +18,4 @@ var fixedicon = `<a href="#" class="talk-btn">
         $('html, body').animate({ scrollTop: 0 }, '300');
     });
 
-</script>
-    `
-document.write(fixedicon);
-
-
-
-
-        
-
- 
-
+</script> `

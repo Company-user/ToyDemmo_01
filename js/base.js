@@ -1,6 +1,5 @@
 var nav =
-    `<nav>
-        <div class="nav-top-bar">
+    ` <div class="nav-top-bar">
             <div class="container-fluid bg-orange">
                 <div class="container d-flex justify-content-between ">
                     <div class="dropdown dropdown-language">
@@ -119,9 +118,8 @@ var nav =
                     </ul>
                 </div>
             </div>
-        </nav>
-    </nav>
-    `
+        </nav> `
+        
     var footer = `
         <div class="container-fluid bg-orange">
             <div class="container">
@@ -180,72 +178,44 @@ var nav =
         <hr class="footer-line">
         <div class="copylight text-center py-3">
             copyright@2020
-        </div>
+        </div> `
+
+    
+   var fixedicon = `<a href="#" class="talk-btn">
+        <img src="img/layout/talk.svg" alt="">
+    </a>
+
+    <a href="#" class="top-btn">
+        <img src="img/layout/top-icon.svg" alt="">
+    </a>
+    
+    <script>
+    var btn = $('.top-btn');
+
+    console.log("",btn);
+    $(window).scroll(function () {
+        if ($(window).scrollTop() > 300) {
+            btn.addClass('show');
+        } else {
+            btn.removeClass('show');
+        }
+    });
+
+    btn.on('click', function (e) {
+        e.preventDefault();
+        $('html, body').animate({ scrollTop: 0 }, '300');
+    });
+
+</script>
     `
-    var footer = `
-        <div class="container-fluid bg-orange">
-            <div class="container">
-                <ul class="d-flex justify-content-center align-items-center footer-menu">
-                        <li class="footer-item"> 
-                            <a href="" class="footer-link"> 關於SINGULAR </a>
-                        </li>
-                        <li class="footer-item">
-                            <a href=""  class="footer-link">  用戶協議</a>
-                        </li>
-                        <li class="footer-item">
-                            <a href=""  class="footer-link"> 隱私政策 </a>
-                        </li>
-                        <li class="footer-item">
-                            <a href=""  class="footer-link"> 幫助中心</a>
-                        </li>
-                </ul>
+document.write(fixedicon);
 
-            </div>
-        </div>
+   
+   
 
-        <div class="container-fluid py-4">
-            <div class="container">
-                <div class="row footer-contact">
-                    <div class="col-md-4">
-                        <div class="section-1  text-center">
-                            <div class="logo mb-3">
-                                <img src="img/layout/logo.svg" alt="">
-                            </div>
-                            <div class="subscribe">
-                                <img src="img/layout/fb-icon.svg" class="mr-2" alt="">
-                                <img src="img/layout/ig-icon.svg" alt="">
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="col-md-4 ">
-                        <h6 class="title">
-                            Singujar Co. Ltd
-                        </h6>
-                        <p class="info">（04637）首爾特別市中區漢江大路416號首爾廣場</br>
-                            電話：+ 82-2-1599-0110</br>
-                            傳真：+ 82-2-849-4962
-                        </p>
-                    </div>
-                    <div class="col-md-4">
-                        <h6>客戶服務中心</h6>
-                        <p>（04637）首爾特別市中區漢江大路416號首爾廣場</br>
-                            電話：+ 82-2-1599-0110</br>
-                            傳真：+ 82-2-849-4962
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <hr class="footer-line">
-        <div class="copylight text-center py-3">
-            copyright@2020
-        </div>
- `
-
-
-    document.querySelector('.header').innerHTML=nav
-    document.querySelector('.layout-footer').innerHTML=footer
+document.querySelector('.nav-layout').innerHTML=nav
+document.querySelector('.footer').innerHTML=footer
+document.querySelector('.fixed-btn').innerHTML=fixedicon
  
 
 
