@@ -1,4 +1,4 @@
-var footer = ` <footer>
+var footer = `
         <div class="container-fluid bg-orange">
             <div class="container">
                 <ul class="d-flex justify-content-center align-items-center footer-menu">
@@ -57,5 +57,13 @@ var footer = ` <footer>
         <div class="copylight text-center py-3">
             copyright@2020
         </div>
-    </footer>`;
-document.write(footer);
+ `
+// console.log('123');
+// document.querySelector('.layout-footer').innerHTML=footer
+//  console.log(footer,'a')
+// console.log('123');
+//  footer.innerHTML=footer
+// (async function(){
+//  console.log('123');
+// }())
+
