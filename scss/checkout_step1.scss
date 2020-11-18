@@ -1,0 +1,35 @@
+@import "_color.scss";
+@import "_base.scss";
+
+.step-group {
+    display: flex;
+    justify-content: center;
+    color: #8b8b8b;
+   
+    .step-item {
+       display:flex;
+       padding: 30px 10px;
+        &:nth-child(1) {
+            color: $orange-light;
+        }
+
+        span{
+            display: block;
+            text-align: center;
+            line-height: 30px;
+            margin-right: 5px;
+        }
+
+        .round {
+            display:block;
+            color: #fff;
+            width: 30px;
+            height: 30px;
+            background-color:#8b8b8b;
+            border-radius: 50%;
+            &:nth-child(1){
+                background-color:$orange-light;
+            }
+        }  
+    } 
+}
