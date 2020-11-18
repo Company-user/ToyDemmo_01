@@ -5,26 +5,17 @@
     .btn {
         font-family: $font-bold;
     }
-
 }
-
 
 .light-btn {
     color: $black-light;
-    border: 1px solid #CFD2D4;
-
+    border: 1px solid #cfd2d4;
 }
 
 .light-btn:hover {
     color: #fff;
     background-color: $orange-secondary;
 }
-
-
-// .nav-active-product {
-//     border-bottom: 4px solid $blue-light;
-// }
-
 
 .item-breadcrumb {
     color: #9e9e9e;
@@ -34,8 +25,6 @@
     a {
         text-decoration: none;
         color: $black-light;
-
-
     }
 }
 
@@ -45,19 +34,17 @@
         color: #0796fc;
     }
 
-
     a:hover {
         color: $orange-secondary;
-        transition: .3s;
+        transition: 0.3s;
     }
-
 }
 
 .side-card-header {
     padding: 0.3125rem;
 
     .btn {
-        font-family: 'Microsoft JhengHei bold' !important;
+        font-family: "Microsoft JhengHei bold" !important;
     }
 
     button {
@@ -70,14 +57,13 @@
     button:hover {
         text-decoration: none;
         color: $orange-secondary;
-        transition: .3s;
+        transition: 0.3s;
     }
 
     button:focus {
         text-decoration: none;
     }
 }
-
 
 .side-card-body {
     padding: 0.3125rem;
@@ -92,13 +78,11 @@
     }
 }
 
-
 .text-muted .btn-blue {
     background-color: $blue-primary;
     color: #fff;
     border-radius: 50px;
     padding: 0.625rem 1rem;
-
 }
 
 //修改 gutters --start
@@ -127,7 +111,6 @@
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-
 }
 
 .product-carousel-inner {
@@ -135,7 +118,6 @@
     display: inline-block;
     margin: 0;
     padding: 0;
-
 }
 
 .product-click-icon-position {
@@ -144,23 +126,19 @@
     height: auto;
     left: -60px;
     bottom: -120px;
-
 }
-
 
 .product-info-1 {
     .price {
-        background-color: #FAFAFA;
+        background-color: #fafafa;
         border-radius: 4px;
         height: 60px;
-
     }
 
     h3 {
-        color: #FB6340;
+        color: #fb6340;
         line-height: 60px;
         padding-left: 10px;
-
     }
 
     h5 {
@@ -184,17 +162,14 @@
         // border: 1px solid #dee2e6;
     }
 
-
     p {
-        color: #8B8B8B;
+        color: #8b8b8b;
         margin-bottom: 0;
         padding-top: 6px;
-
     }
 }
 
 .main-btn {
-
     .warning-btn {
         width: 40%;
         color: $orange-secondary;
@@ -213,17 +188,13 @@
         background-color: $orange-secondary;
         border: 2px solid $orange-secondary;
         color: #fff;
-
     }
 
     .warning-btn-active:hover {
         background-color: #f19306;
         color: #fff;
-
     }
-
 }
-
 
 .transport {
     .btn {
@@ -242,20 +213,17 @@
     .nav-item {
         h5:hover {
             color: $black-primary;
-
         }
 
         h5:focus {
             color: $black-primary;
         }
     }
-
 }
 
 .side-card-body {
     h5:hover {
         color: $black-primary;
-
     }
 
     h5:focus {
@@ -277,14 +245,12 @@
 
     .line {
         height: 2px;
-        background-color: #FFC671;
+        background-color: #ffc671;
         border: none;
-
     }
 }
 
 .info-msg {
-
     li {
         color: $black-light;
     }
@@ -297,9 +263,7 @@
         background-color: #f0f0f0;
         border-radius: 6px 6px 0 0;
         padding: 20px;
-
     }
-
 }
 
 .procuct-record {
@@ -309,30 +273,27 @@
     }
 
     .price-sm {
-        color: #FB6340;
+        color: #fb6340;
         font-size: 18px;
     }
 
     .card-body {
-        background-color: #F3F3F3;
+        background-color: #f3f3f3;
     }
 }
 
 .card-shadow {
     &:hover {
-        box-shadow: 0 3px 10px rgba(0, 0, 0, .18);
-        transition: .3s;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.18);
+        transition: 0.3s;
     }
-
 }
 
 .add-shoppingCar {
-
     .modal-footer,
     .modal-header {
         justify-content: center;
         border: none;
-
     }
 
     .modal-header {
@@ -351,9 +312,9 @@
     .back-btn {
         width: 180px;
         height: 48px;
-        color: #FB6340;
         background-color: #fff;
-        border: 1px solid #FB6340;
+        color:  #fb6340;
+        border: 1px solid #fb6340;
         margin-right: 5px;
 
         &:hover {
@@ -365,13 +326,17 @@
         width: 180px;
         height: 48px;
         color: #fff;
-        background-color: #FB6340;
+        background-color: #fb6340;
         padding: 10px 2rem;
+
+        a {
+            display: block;
+            color:#fff;
+            text-decoration: none;
+        }
 
         &:hover {
             background-color: #f04f2b;
         }
-
     }
-
 }
