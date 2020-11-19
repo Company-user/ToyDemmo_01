@@ -12,15 +12,58 @@
 </head>
 
 <body>
-    <div id="wrap" class="wrap">
-        <nav class="nav-layout"></nav>
-        <section>
-            <div class="container">
+    <nav class="nav-layout"></nav>
+    <section>
+        <div class="container">
+            <div class="step-group">
+                <div class="step-item">
+                    <span class="round">1</span>
+                    <span>確認購物車</span>
+                    <img src="img/checkout/disabled.svg" class="disabled" alt="">
+
+                </div>
+
+                <div class="step-item">
+                    <span class="round">2</span>
+                    <span>付款與運送方式</span>
+                    <img src="img/checkout/disabled.svg" class="disabled" alt="">
+
+                </div>
+
+                <div class="step-item">
+                    <span class="round active">3</span>
+                    <span>資料填寫</span>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="card">
+            <div class="title-item">
+                <h3>填寫訂購資料</h3>
+                <button class="btn open-dropdown">
+                    點此展開訂購資料
+                    <img src="img/checkout/dropdown.svg" alt="">
+                </button>
+            </div>
+
+            <div class="card-body">
+                <h4>1.收件人資訊</h4>
+                <form>
+                    <div class="form-group">
+                        <label for="name">姓名</label>
+                        <input type="text" id="name" class="form-control" placeholder="請輸入姓名">
+                    </div>
+                </form>
 
             </div>
-        </section>
-        <footer class="footer"></footer>
+
+        </div>
     </div>
+    <footer class="footer"></footer>
+
     <div class="fixed-btn"></div>
     <!-- <script src="js/jquery.slim.min.js"></script> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
