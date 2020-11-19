@@ -1,15 +1,6 @@
 @import "_color.scss";
 @import "_base.scss";
 
-.wrap {
-    display: flex;
-    min-height: 100%;
-    flex-direction: column;
-
-    >article {
-        flex: 1;
-    }
-}
 
 .step-group {
     display: flex;
@@ -43,6 +34,8 @@
         .active {
             background-color: $orange-light;
         }
+
+
     }
 }
 
@@ -103,6 +96,7 @@
             padding: 4px 10px;
             background-color: #f2711c;
             color: #fff;
+            vertical-align: baseline;
         }
     }
 }

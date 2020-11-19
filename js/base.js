@@ -189,28 +189,33 @@ var nav =
         <img src="img/layout/top-icon.svg" alt="">
     </a>
     
-    <script>
-    var btn = $('.top-btn');
+    
+   
 
-    console.log("",btn);
+    `
+
+
+$(function () {
+    //jq 起手式
     $(window).scroll(function () {
         if ($(window).scrollTop() > 300) {
             btn.addClass('show');
+            // console.log('300超過+class')
         } else {
             btn.removeClass('show');
+            // console.log('以內300removeclass')
         }
     });
 
+
+    //jq點擊事件
+    var btn = $('.top-btn');
+    // console.log(btn);
     btn.on('click', function (e) {
         e.preventDefault();
-        $('html, body').animate({ scrollTop: 0 }, '300');
+        $('html, body').animate({ scrollTop: 0 }, 1000);
     });
-
-</script>
-    `
-document.write(fixedicon);
-
-   
+});
    
 
 document.querySelector('.nav-layout').innerHTML=nav
