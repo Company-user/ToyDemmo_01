@@ -60,9 +60,10 @@
         background-color: rgba(0, 0, 0, 0.03);
         border-bottom: 1px solid rgba(0, 0, 0, 0.125);
 
-        .open-dropdown {
+        .open-dropdown-btn {
             color: #2185D0;
             font-size: 14px;
+            border: none;
         }
 
 
@@ -142,14 +143,45 @@
             background-color: #ee9105;
             transition: .3s;
         }
+        &:focus{
+            outline: none;
+        }
 
     }
 
     .form-control, ::placeholder{
-        color:#949494;  
+        color:#818181;  
+    }
+
+    .open-dropdown{
+        border: 1px solid #000;
+        &.active{
+            height: 300px;
+        }
+        
+        >p{
+            margin: 0;
+            padding: 0;
+        }
     }
 
 }
 
 
+.test-select{
+    // select::-ms-expand{ display: none; }
+    appearance:none;
+    position: relative;
+    ::before{
+        display: block;
+        width: 20px;
+        height: 20px;
+        content: '';
+        border-left: 2px solid #f00;
+        border-bottom: 2px solid #f00;
+        background-color: #000;
+
+    }
+
+}
 
