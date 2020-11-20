@@ -12,57 +12,165 @@
 </head>
 
 <body>
-    <nav class="nav-layout"></nav>
-    <section>
-        <div class="container">
-            <div class="step-group">
-                <div class="step-item">
-                    <span class="round">1</span>
-                    <span>確認購物車</span>
-                    <img src="img/checkout/disabled.svg" class="disabled" alt="">
+    <div class="wrap">
+        <nav class="nav-layout"></nav>
+        <article>
+            <section>
+                <div class="container">
+                    <div class="step-group">
+                        <div class="step-item">
+                            <span class="round">1</span>
+                            <span>確認購物車</span>
+                            <img src="img/checkout/disabled.svg" class="disabled" alt="">
+                        </div>
 
-                </div>
+                        <div class="step-item">
+                            <span class="round">2</span>
+                            <span>付款與運送方式</span>
+                            <img src="img/checkout/disabled.svg" class="disabled" alt="">
 
-                <div class="step-item">
-                    <span class="round">2</span>
-                    <span>付款與運送方式</span>
-                    <img src="img/checkout/disabled.svg" class="disabled" alt="">
+                        </div>
 
-                </div>
+                        <div class="step-item">
+                            <span class="round active">3</span>
+                            <span>資料填寫</span>
 
-                <div class="step-item">
-                    <span class="round active">3</span>
-                    <span>資料填寫</span>
-
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <div class="container">
-        <div class="card">
-            <div class="title-item">
-                <h3>填寫訂購資料</h3>
-                <button class="btn open-dropdown">
-                    點此展開訂購資料
-                    <img src="img/checkout/dropdown.svg" alt="">
-                </button>
-            </div>
-
-            <div class="card-body">
-                <h4>1.收件人資訊</h4>
-                <form>
-                    <div class="form-group">
-                        <label for="name">姓名</label>
-                        <input type="text" id="name" class="form-control" placeholder="請輸入姓名">
+                        </div>
                     </div>
-                </form>
+                </div>
+            </section>
 
-            </div>
+            <section>
+                <div class="container">
+                    <div class="card">
+                        <div class="title-item">
+                            <h3>填寫訂購資料</h3>
+                            <button class="btn open-dropdown">
+                                點此展開訂購資料
+                                <img src="img/checkout/dropdown.svg" alt="">
+                            </button>
+                        </div>
 
-        </div>
+                        <div class="card-body">
+                            <h4>1.收件人資訊</h4>
+                            <form>
+                                <div class="form-group">
+                                    <label for="name">姓名</label>
+                                    <input type="text" id="name" class="form-control" placeholder="請輸入姓名">
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <label for="inputState">手機號碼</label>
+                                        <select id="inputState" class="form-control">
+                                            <option selected>手機號碼</option>
+                                            <option>(中國+86)</option>
+                                            <option>(香港+52)</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="number">&nbsp;</label>
+                                        <input type="text" id="number" class="form-control" placeholder="請輸入手機號碼">
+                                    </div>
+                                </div>
+
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <label for="inputState">縣市</label>
+                                        <select id="inputState" class="form-control">
+                                            <option selected>請選擇縣市</option>
+                                            <option>台中市</option>
+                                            <option>台北市</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="inputState">&nbsp;</label>
+                                        <select id="inputState" class="form-control">
+                                            <option selected>請選擇地區</option>
+                                            <option>402南區</option>
+                                            <option>403西區</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="address">地址</label>
+                                    <input type="text" id="address" class="form-control" placeholder="請輸入地址">
+                                </div>
+                            </form>
+
+                            <h4>2.信用卡資訊</h4>
+                            <p class="card-info">
+                                信用卡僅限持卡人本人使用。本公司將依您提供的持卡人資訊與發卡銀行、收單行及持卡人照會是否屬實，並保留出貨權益。如有冒用信用卡或個資，將送司法單位處置。</p>
+                            <form>
+                                <div class="form-group">
+                                    <label for="number">信用卡號</label>
+                                    <input type="text" id="number" class="form-control" placeholder="請輸入姓名">
+                                </div>
+
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <label for="name">有效期限</label>
+                                        <input type="text" id="name" class="form-control" placeholder="MM / YY">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="name">驗證碼</label>
+                                        <input type="text" id="name" class="form-control" placeholder="信用卡背後三碼">
+                                    </div>
+                                </div>
+                            </form>
+
+                            <h4>3.配送資訊</h4>
+                            <form>
+                                <div class="form-group">
+                                    <label for="inputState">發票</label>
+                                    <select id="inputState" class="form-control">
+                                        <option selected>捐贈發票</option>
+                                        <option>電子發票</option>
+                                        <option>電子發票(載具)</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="inputState">捐贈單位</label>
+                                    <select id="inputState" class="form-control">
+                                        <option selected>財團法人創世社會福利基金會</option>
+                                        <option>財團法人創世社會福利基金會</option>
+                                        <option>財團法人癌症關懷基金會</option>
+                                    </select>
+                                    <small>核准文號：北區國稅北縣三字第1000002660號<br>
+                                        ※依統一發票使用辦法規定：發票一經開立不得任意更改或改開發票。</small>
+                                </div>
+                                <div class="dropdown-divider"></div>
+                                <div class="form-group">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                                        <label class="form-check-label" for="gridCheck">
+                                            我同意接受<a href="#">服務條款</a>與<a href="#">隱私政策</a>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="btn-group">
+                                    <a href="checkout_step2.html" class=" back-btn">
+                                        <img src="img/checkout/arrow-left.svg" alt="">
+                                        修改付款方式
+                                    </a>
+                                    <button type="submit" class="finish-btn">完成訂購</button>
+                                </div>
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+
+        </article>
+
+        <footer class="footer"></footer>
     </div>
-    <footer class="footer"></footer>
+
+
 
     <div class="fixed-btn"></div>
     <!-- <script src="js/jquery.slim.min.js"></script> -->

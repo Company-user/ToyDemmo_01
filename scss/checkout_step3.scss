@@ -1,8 +1,16 @@
 @import "_color.scss";
 @import "_base.scss";
 
+.wrap{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+    >article {
+        flex:1;  
+    }
+}
 
-.container {
+.container{
     max-width: 1000px;
 }
 
@@ -44,6 +52,7 @@
 }
 
 .card {
+    margin-bottom: 50px;
 
     .title-item {
         display: flex;
@@ -61,6 +70,7 @@
             font-size: 16px;
             color: $black-secondary;
             padding: 20px;
+            margin-bottom: 0;
         }
     }
 
@@ -82,10 +92,64 @@
 
     }
 
+    .card-info{
+        margin-left: 10px;
+        color: $black-light;
+    }
 
+    small{
+        color: $black-light;
+    }
+    .form-check-label a{
+        color: #2185D0;
+    }
 
+    .form-check-input{
+        margin-top: 6px;
+    }
 
+    .btn-group{
+        display: flex;
+        justify-content: flex-end;
+    }
 
+    .back-btn{
+        width: 160px;
+        height: 40px;
+        text-align: center;
+        color: #8B8B8B;
+        border: 1px solid #CFD2D4;
+        border-radius: 4px;
+        padding: 6px 12px;
+        margin-right: 8px;
+        &:hover{
+            text-decoration: none;
+            background-color: #eeeeee;
+            transition: .3s;
+        }
+    }
 
+    .finish-btn{
+        width: 160px;
+        height: 40px;
+        text-align: center;
+        color: #fff;
+        background-color: $orange-secondary;
+        border: 1px solid $orange-secondary;
+        border-radius: 4px;
+        padding: 6px 12px;
+        &:hover{
+            background-color: #ee9105;
+            transition: .3s;
+        }
+
+    }
+
+    .form-control, ::placeholder{
+        color:#949494;  
+    }
 
 }
+
+
+
