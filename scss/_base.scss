@@ -20,16 +20,6 @@ body {
   font-family: "Noto Sans", "Microsoft JhengHei bold", "-apple-system-", "segoe UI", sans-serif;
 }
 
-.app {
-  display: flex;
-  min-height: 100%;
-  flex-direction: column;
-
-  >article {
-    flex: 1;
-  }
-}
-
 .bg-orange {
   background-color: $orange-primary;
 }
@@ -42,10 +32,6 @@ body {
 .dropdown-menu-language {
   min-width: 5rem;
 }
-
-// .dropdown:hover>.dropdown-menu {
-//   display: block;
-// }
 
 //取消預設fosus框
 .focus-btn,

@@ -45,23 +45,25 @@
                     <div class="card">
                         <div class="title-item">
                             <h3>填寫訂購資料</h3>
-                            <button class="btn open-dropdown-btn">
-                                點此展開訂購資料
-                                <img src="img/checkout/dropdown.svg" alt="">
-                            </button>
-                            <!-- <button class="open-dropdown" type="button" data-toggle="collapse"
-                                data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                                點此展開訂購資料
-                                <img src="img/checkout/dropdown.svg" alt="">
-                            </button> -->
-                        </div>
-                        <!-- <div class="collapse" id="collapseExample">
-                            <div class="container">
-                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
-                                squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
-                                sapiente ea proident.
+                            <div class="btn-wrap">
+                                <button class="open-dropdown-btn" type="button" data-toggle="collapse"
+                                    data-target="#collapseExample" aria-expanded="false"
+                                    aria-controls="collapseExample">
+                                    點此展開訂購資料
+                                </button>
+
                             </div>
-                        </div> -->
+                        </div>
+                        <div class="collapse" id="collapseExample">
+                            <div class="container dropdown-inner">
+                                <p>
+                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                    richardson ad
+                                    squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+                                    sapiente ea proident.
+                                </p>
+                            </div>
+                        </div>
 
 
                         <div class="card-body">
@@ -71,14 +73,18 @@
                                     <label for="name">姓名</label>
                                     <input type="text" id="name" class="form-control" placeholder="請輸入姓名">
                                 </div>
+
                                 <div class="form-row">
                                     <div class="form-group col-md-6">
                                         <label for="inputState">手機號碼</label>
-                                        <select id="inputState" class="form-control test-select">
-                                            <option selected>手機號碼</option>
-                                            <option>(中國+86)</option>
-                                            <option>(香港+52)</option>
-                                        </select>
+                                        <div class="select-icon">
+                                            <select id="inputState" class="form-control ">
+                                                <option selected>手機號碼</option>
+                                                <option>(中國+86)</option>
+                                                <option>(香港+52)</option>
+                                            </select>
+                                        </div>
+
                                     </div>
                                     <div class="form-group col-md-6">
                                         <label for="number">&nbsp;</label>
@@ -89,19 +95,24 @@
                                 <div class="form-row">
                                     <div class="form-group col-md-6">
                                         <label for="inputState">縣市</label>
-                                        <select id="inputState" class="form-control">
-                                            <option selected>請選擇縣市</option>
-                                            <option>台中市</option>
-                                            <option>台北市</option>
-                                        </select>
+                                        <div class="select-icon">
+                                            <select id="inputState" class="form-control">
+                                                <option selected>請選擇縣市</option>
+                                                <option>台中市</option>
+                                                <option>台北市</option>
+                                            </select>
+                                        </div>
+
                                     </div>
                                     <div class="form-group col-md-6">
                                         <label for="inputState">&nbsp;</label>
-                                        <select id="inputState" class="form-control">
-                                            <option selected>請選擇地區</option>
-                                            <option>402南區</option>
-                                            <option>403西區</option>
-                                        </select>
+                                        <div class="select-icon">
+                                            <select id="inputState" class="form-control">
+                                                <option selected>請選擇地區</option>
+                                                <option>402南區</option>
+                                                <option>403西區</option>
+                                            </select>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="form-group">
@@ -135,20 +146,25 @@
                             <form>
                                 <div class="form-group">
                                     <label for="inputState">發票</label>
-                                    <select id="inputState" class="form-control">
-                                        <option selected>捐贈發票</option>
-                                        <option>電子發票</option>
-                                        <option>電子發票(載具)</option>
-                                    </select>
+                                    <div class="select-icon">
+                                        <select id="inputState" class="form-control">
+                                            <option selected>捐贈發票</option>
+                                            <option>電子發票</option>
+                                            <option>電子發票(載具)</option>
+                                        </select>
+                                    </div>
+
                                 </div>
 
                                 <div class="form-group">
                                     <label for="inputState">捐贈單位</label>
-                                    <select id="inputState" class="form-control">
-                                        <option selected>財團法人創世社會福利基金會</option>
-                                        <option>財團法人創世社會福利基金會</option>
-                                        <option>財團法人癌症關懷基金會</option>
-                                    </select>
+                                    <div class="select-icon">
+                                        <select id="inputState" class="form-control">
+                                            <option selected>財團法人創世社會福利基金會</option>
+                                            <option>財團法人創世社會福利基金會</option>
+                                            <option>財團法人癌症關懷基金會</option>
+                                        </select>
+                                    </div>
                                     <small>核准文號：北區國稅北縣三字第1000002660號<br>
                                         ※依統一發票使用辦法規定：發票一經開立不得任意更改或改開發票。</small>
                                 </div>
@@ -174,10 +190,6 @@
                     </div>
                 </div>
             </section>
-
-
-
-
         </article>
 
         <footer class="footer"></footer>

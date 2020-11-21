@@ -1,16 +1,17 @@
 @import "_color.scss";
 @import "_base.scss";
 
-.wrap{
+.wrap {
     display: flex;
     flex-direction: column;
-    min-height: 100vh; 
+    min-height: 100vh;
+
     >article {
-        flex:1;  
+        flex: 1;
     }
 }
 
-.container{
+.container {
     max-width: 1000px;
 }
 
@@ -60,19 +61,58 @@
         background-color: rgba(0, 0, 0, 0.03);
         border-bottom: 1px solid rgba(0, 0, 0, 0.125);
 
-        .open-dropdown-btn {
-            color: #2185D0;
-            font-size: 14px;
-            border: none;
-        }
-
-
         h3 {
             font-size: 16px;
             color: $black-secondary;
             padding: 20px;
             margin-bottom: 0;
         }
+
+
+        .btn-wrap {
+            position: relative;
+            display: flex;
+
+            &:after {
+                position: absolute;
+                content: '';
+                right: 15px;
+                top: 40%;
+                bottom: 0;
+                width: 8px;
+                height: 8px;
+                border-bottom: 2px solid#2185D0;
+                border-left: 2px solid#2185D0;
+                transform: rotate(-45deg);
+            }
+
+            .open-dropdown-btn {
+                color: #2185D0;
+                background-color: #F7F7F7;
+                font-size: 14px;
+                border: none;
+                padding-right: 35px;
+
+                &.active {
+                    height: 300px;
+                    border: none;
+                }
+
+                &:focus {
+                    outline: none;
+                }
+            }
+
+        }
+
+    }
+
+    .dropdown-inner {
+        >p {
+            margin-top: 10px;
+            margin-bottom: 0;
+        }
+
     }
 
 
@@ -93,28 +133,29 @@
 
     }
 
-    .card-info{
+    .card-info {
         margin-left: 10px;
         color: $black-light;
     }
 
-    small{
+    small {
         color: $black-light;
     }
-    .form-check-label a{
+
+    .form-check-label a {
         color: #2185D0;
     }
 
-    .form-check-input{
+    .form-check-input {
         margin-top: 6px;
     }
 
-    .btn-group{
+    .btn-group {
         display: flex;
         justify-content: flex-end;
     }
 
-    .back-btn{
+    .back-btn {
         width: 160px;
         height: 40px;
         text-align: center;
@@ -123,14 +164,15 @@
         border-radius: 4px;
         padding: 6px 12px;
         margin-right: 8px;
-        &:hover{
+
+        &:hover {
             text-decoration: none;
             background-color: #eeeeee;
             transition: .3s;
         }
     }
 
-    .finish-btn{
+    .finish-btn {
         width: 160px;
         height: 40px;
         text-align: center;
@@ -139,49 +181,49 @@
         border: 1px solid $orange-secondary;
         border-radius: 4px;
         padding: 6px 12px;
-        &:hover{
+
+        &:hover {
             background-color: #ee9105;
             transition: .3s;
         }
-        &:focus{
+
+        &:focus {
             outline: none;
         }
 
     }
 
-    .form-control, ::placeholder{
-        color:#818181;  
-    }
-
-    .open-dropdown{
-        border: 1px solid #000;
-        &.active{
-            height: 300px;
-        }
-        
-        >p{
-            margin: 0;
-            padding: 0;
-        }
+    .form-control,
+    ::placeholder {
+        color: #818181;
     }
 
 }
 
 
-.test-select{
-    // select::-ms-expand{ display: none; }
-    appearance:none;
+//移除瀏覽器預設select icon
+.form-control {
+    appearance: none;
+}
+
+
+.select-icon {
     position: relative;
-    ::before{
-        display: block;
-        width: 20px;
-        height: 20px;
+
+    &:after {
+        position: absolute;
         content: '';
-        border-left: 2px solid #f00;
-        border-bottom: 2px solid #f00;
-        background-color: #000;
+        right: 15px;
+        top: 0;
+        bottom: 0;
+        width: 8px;
+        height: 8px;
+        border-bottom: 2px solid#8B8B8B;
+        border-left: 2px solid#8B8B8B;
+        transform: rotate(-45deg);
+        // background-image: url(img/checkout/arrow-left.svg);
+        margin: auto;
 
     }
 
 }
-
