@@ -89,7 +89,7 @@ var nav =
                                 <button class="btn btn-cart " type="button" data-toggle="dropdown" aria-haspopup="true"
                                     aria-expanded="false">
                                     <img src="img/layout/shopping-cart.svg" class="btn-car" alt="">
-                                    <span class="badge badge-pill ">6</span>
+                                    <span class="badge badge-pill ">1</span>
                                 </button>
                                 <div class="dropdown-menu dropdown-menu-right dropdown-menu-car">
                                     <h6 class="h6-text">最近加入的商品</h6>
@@ -188,9 +188,6 @@ var nav =
     <a href="#" class="top-btn">
         <img src="img/layout/top-icon.svg" alt="">
     </a>
-    
-    
-   
 
     `
 

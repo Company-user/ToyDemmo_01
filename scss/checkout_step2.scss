@@ -2,8 +2,8 @@
 @import "_base.scss";
 
 
-.container{
-    min-width: 1000px;
+.container {
+    max-width: 1000px;
 }
 
 
@@ -20,8 +20,8 @@
             color: $orange-light;
         }
 
-        img{
-            fill:000;
+        img {
+            fill: 000;
         }
 
         span {
@@ -46,15 +46,17 @@
     }
 }
 
-.card{
-    color:#222222;
+
+
+.card {
+    color: #222222;
     margin-bottom: 16px;
 
-    .card-body{
+    .card-body {
         padding: 0 20px;
     }
 
-    h3{
+    h3 {
         font-size: 16px;
         color: $blue-primary;
         padding: 20px;
@@ -62,58 +64,63 @@
         background-color: rgba(0, 0, 0, 0.03);
     }
 
-    ul{
+    ul {
         padding-left: 0;
-        .form-check{
+
+        .form-check {
             padding-top: 5px;
         }
-        li{
+
+        li {
             list-style-type: none;
             padding: 16px 20px;
             border-bottom: 1px solid rgba(0, 0, 0, 0.125);
-            &:nth-child(3){
+
+            &:nth-child(3) {
                 border-bottom: none;
             }
         }
 
-        .flexinline{
+        .flexinline {
             display: flex;
         }
-       
 
-        .title{
+
+        .title {
             margin-bottom: 0;
         }
 
-        .subtitle{
+        .subtitle {
             font-size: 14px;
-            color:$black-light;
+            color: $black-light;
             padding-top: 2px;
             margin-bottom: 0;
         }
 
-        .row{
+        .row {
             display: flex;
             align-items: center;
         }
 
-        .price, .price-red{
+        .price,
+        .price-red {
             font-size: 18px;
             text-align: right;
             margin-bottom: 0;
             vertical-align: middle;
         }
-        .price-red{
+
+        .price-red {
             color: #FB6340;
         }
     }
 }
 
-.card-footer{
-    .transport{
+.card-footer {
+    .transport {
         margin-top: 10px;
     }
-    
+
     p {
         font-size: 14px;
         color: #666666;
@@ -129,27 +136,27 @@
 
     .total {
         color: #707070;
-    
+
         .price {
             text-align: right;
         }
-    
+
         .main-price {
             font-size: 28px;
             color: #FB6340;
-    
+
             p {
                 font-size: 13px;
                 color: #707070;
             }
         }
-    
+
         .next-btn {
             width: 100%;
             height: 40px;
             color: #fff;
             background-color: #fb9802;
-    
+
             &:hover {
                 background-color: #ee9105;
                 transition: .3s;
