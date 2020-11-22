@@ -48,12 +48,17 @@
             background-color: $orange-light;
         }
 
+    }
+}
 
+@media(max-width:767px) {
+    .step-group {
+        display: none;
     }
 }
 
 .card {
-    margin-bottom: 50px;
+    margin: 20px auto;
 
     .title-item {
         display: flex;

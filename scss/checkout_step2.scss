@@ -46,11 +46,17 @@
     }
 }
 
+@media(max-width:767px) {
+    .step-group {
+        display: none;
+    }
+}
+
 
 
 .card {
     color: #222222;
-    margin-bottom: 16px;
+    margin: 20px auto;
 
     .card-body {
         padding: 0 20px;

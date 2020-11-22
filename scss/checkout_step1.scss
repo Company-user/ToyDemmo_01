@@ -39,9 +39,14 @@
     }
 }
 
+@media(max-width:767px) {
+    .step-group {
+        display: none;
+    }
+}
+
 .card-wrap {
-    margin: 0 auto;
-    margin-bottom: 20px;
+    margin: 20px auto;
     max-width: 1000px;
 
     .card-body {
