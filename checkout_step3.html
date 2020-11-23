@@ -203,16 +203,46 @@
                                         <img src="img/checkout/arrow-left.svg" alt="">
                                         修改付款方式
                                     </a>
-                                    <button type="submit" class="finish-btn">完成訂購</button>
+
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="finish-btn" data-toggle="modal"
+                                        data-target="#staticBackdrop">
+                                        完成訂購
+                                    </button>
+
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="staticBackdrop" data-backdrop="static"
+                                        data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                                        aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered">
+                                            <div class="modal-content">
+                                                <div class="modal-body">
+                                                    <img src="img/checkout/confirm.svg" class="confirm-icon" alt="">
+                                                    <h2>已收到您的訂單</h2>
+                                                    <p class="order-number">訂單編號：201711203548</p>
+                                                    <p>您將會收到一封訂單完成Email</p>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <a href="index.html" type="button" class="btn go-home">
+                                                        回首頁
+                                                    </a>
+                                                    <a href="member.html" type="button" class="btn go-order">
+                                                        查看訂單
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </form>
+
+
 
                         </div>
                     </div>
                 </div>
             </section>
         </article>
-
         <footer class="footer"></footer>
     </div>
 
