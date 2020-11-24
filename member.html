@@ -123,20 +123,31 @@
                     </div>
                 </form>
             </div>
-            <div class="tab-pane fade " id="order">
-                <div class="Status-bar">
-                    <p>訂單日期 2020/11/23</p>
-                    <div class="left-set">
-                        <img src="img/checkout/transport.svg" alt="">
-                        <p>訂單確認中</p>
-                        <p>處理中</p>
+            <div class="tab-pane fade" id="order">
+                <div class="row status-bar">
+                    <div class="col-md-6">
+                        <p>訂單日期 2020/11/23</p>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="left-set">
+                            <img src="img/checkout/transport.svg" alt="">
+                            <p class="border-right">訂單確認中</p>
+                            <p class="text-orange">處理中</p>
+                        </div>
                     </div>
                 </div>
-                <div class="content">
-                    <img src="img/checkout/item.jpg" alt="">
-                    <h3>玩具總動員方形收納箱(共10款)</h3>
-                </div>
+                <div class="content-wrap">
+                    <div class="row content">
+                        <div class="col-md-2">
+                            <img src="img/checkout/item.jpg" class="conetnt-img" alt="">
+                        </div>
+                        <div class="col-md-8">
+                            <h3>玩具總動員方形收納箱(共10款)</h3>
+                        </div>
+                        <div class="col-md-2">$1,200</div>
+                    </div>
 
+                </div>
 
 
             </div>
@@ -163,8 +174,8 @@
 <script src="js/calender/datepicker.min.js"></script>
 
 
-<script>
+<!-- <script>
     $('[data-toggle="datepicker"]').datepicker();
-</script>
+</script> -->
 
 </html>
