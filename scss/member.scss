@@ -133,6 +133,7 @@ select {
 
 .content-wrap {
   padding: 10px;
+
   p {
     margin-bottom: 0;
   }
@@ -144,6 +145,7 @@ select {
 
     .img-wrap {
       text-align: center;
+
       .conetnt-img {
         width: 100%;
       }
@@ -174,6 +176,7 @@ select {
   justify-content: flex-end;
   align-items: center;
   padding: 10px;
+
   .btn {
     width: 140px;
     height: 36px;
@@ -181,18 +184,21 @@ select {
     background-color: #fb6340;
     padding: 6px 12px;
     margin-right: 20px;
+
     &:hover {
       background-color: #f0522f;
       transition: 0.3s;
     }
   }
+
   .total {
     p {
       color: $black-light;
       margin-bottom: 0;
     }
+
     span {
-      color: $orange-primary;
+      color: #f2711c;
       font-size: 30px;
     }
   }
