@@ -1,0 +1,36 @@
+@import "_color.scss";
+@import "_base.scss";
+
+body {
+  background-color: #f3f3f3;
+}
+
+.tab-bar-wrap {
+  color: $black-light;
+  .back-btn {
+    .back-icon {
+      position: relative;
+      &:after {
+        position: absolute;
+        content: "";
+        left: 0;
+        top: 40%;
+        bottom: 0;
+        width: 8px;
+        height: 8px;
+        border-bottom: 2px solid $black-light;
+        border-left: 2px solid $black-light;
+        transform: rotate(45deg);
+      }
+    }
+
+    span {
+      color: $black-light;
+      padding-left: 20px;
+    }
+  }
+
+  .back-wrap-number {
+    text-align: right;
+  }
+}

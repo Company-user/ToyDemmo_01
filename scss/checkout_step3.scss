@@ -1,16 +1,6 @@
 @import "_color.scss";
 @import "_base.scss";
 
-.wrap {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-
-  > article {
-    flex: 1;
-  }
-}
-
 .container {
   max-width: 1000px;
 }
