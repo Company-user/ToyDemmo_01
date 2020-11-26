@@ -183,7 +183,9 @@ body {
 .order-details-wrap {
   background-color: #fafafa;
   padding: 20px 20px 0;
+}
 
+.details-info-1 {
   .details-img {
     margin-left: 30px;
   }
@@ -191,19 +193,29 @@ body {
   .details-info {
     h4 {
       font-size: 18px;
-      margin-bottom: 0;
     }
 
-    p {
-      color: $black-light;
-      margin-bottom: 2px;
-    }
+  }
+
+  p {
+    color: $black-light;
+    margin-bottom: 1px;
+  }
+
+  .price-item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 30px;
 
     .price {
       color: #f2711c;
+
     }
   }
+
 }
+
 
 .details-info-2 {
 
@@ -231,7 +243,7 @@ body {
   .pay-method {
     display: flex;
     justify-content: flex-end;
-    padding: 10px 30px;
+    padding: 30px;
 
     img {
       margin-right: 10px;
@@ -241,11 +253,11 @@ body {
   .pay {
     border-left: 1px solid#E9E9E9;
     text-align: right;
-    padding: 10px 30px;
+    padding: 30px;
   }
 
   P {
-    color: #2185D0;
+    color: #21BA45;
     margin-bottom: 0;
   }
 
