@@ -87,7 +87,7 @@ body {
     text-align: center;
     z-index: 1;
 
-    & + li {
+    &+li {
       margin-left: 100px;
 
       &:after {
@@ -115,6 +115,7 @@ body {
   .date {
     color: $black-light;
   }
+
   .cancel {
     width: 140px;
     height: 40px;
@@ -122,6 +123,7 @@ body {
     color: #fff;
     text-align: center;
     padding: 6px 12px;
+
     &:hover {
       background-color: #f0522f;
       transition: 0.3s;
@@ -132,15 +134,18 @@ body {
 .order-process-wrap {
   color: $black-light;
   padding: 20px 30px;
+
   .secion-1 {
     display: flex;
     align-items: center;
     padding-bottom: 10px;
     border-bottom: 1px solid#E9E9E9;
+
     h3 {
       font-size: 20px;
       margin-bottom: 0;
     }
+
     p {
       margin-bottom: 0;
     }
@@ -149,6 +154,7 @@ body {
   .section-2 {
     display: flex;
     padding: 30px;
+
     .store {
       min-width: 15.625rem;
       font-size: 16px;
@@ -159,6 +165,7 @@ body {
       position: relative;
       border-left: 1px solid#E9E9E9;
       padding: 1.25rem 0 1.25rem 2.5rem;
+
       &:after {
         position: absolute;
         content: "";
@@ -175,7 +182,7 @@ body {
 
 .order-details-wrap {
   background-color: #fafafa;
-  padding: 20px;
+  padding: 20px 20px 0;
 
   .details-img {
     margin-left: 30px;
@@ -186,10 +193,12 @@ body {
       font-size: 18px;
       margin-bottom: 0;
     }
+
     p {
       color: $black-light;
       margin-bottom: 2px;
     }
+
     .price {
       color: #f2711c;
     }
@@ -197,7 +206,47 @@ body {
 }
 
 .details-info-2 {
-  .section-1 {
+
+  .section-1,
+  .section-2 {
     text-align: right;
+    border-top: 1px solid#E9E9E9;
+    padding: 10px 30px;
   }
+
+  .section-2 {
+    border-left: 1px solid#E9E9E9;
+
+    &.main-price {
+      font-size: 20px;
+      color: #F2711C;
+    }
+  }
+}
+
+
+.details-info-3 {
+  padding: 0 20px;
+
+  .pay-method {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 30px;
+
+    img {
+      margin-right: 10px;
+    }
+  }
+
+  .pay {
+    border-left: 1px solid#E9E9E9;
+    text-align: right;
+    padding: 10px 30px;
+  }
+
+  P {
+    color: #2185D0;
+    margin-bottom: 0;
+  }
+
 }
