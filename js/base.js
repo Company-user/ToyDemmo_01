@@ -23,7 +23,7 @@ var nav =
                             <img src="img/layout/user.svg" alt="">
                         </button>
                         <div class="dropdown-menu dropdown-menu-language" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item dropdown-item-language" href="member.html">會員中心</a>
+                            <a id="enterCenter" class="dropdown-item dropdown-item-language" href="member.html">會員中心</a>
                             <a class="dropdown-item dropdown-item-language" href="#">幫助中心</a>
                         </div>
                     
@@ -213,8 +213,13 @@ $(function () {
         $('html, body').animate({ scrollTop: 0 }, 1000);
     });
 
+    $("#enterCenter").on("click",function(){
+        localStorage.setItem("itemActive", 1);
+    });
 });
    
+
+    
 
 document.querySelector('.nav-layout').innerHTML=nav
 document.querySelector('.footer').innerHTML=footer

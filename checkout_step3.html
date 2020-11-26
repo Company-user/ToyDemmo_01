@@ -226,7 +226,8 @@
                                                     <a href="index.html" type="button" class="btn go-home">
                                                         回首頁
                                                     </a>
-                                                    <a href="member.html#order" type="button" class="btn go-order">
+                                                    <a type="button" href="member.html" id="checkOrder"
+                                                        class="btn go-order">
                                                         查看訂單
                                                     </a>
                                                 </div>
@@ -252,7 +253,11 @@
     <script src="js/base.js"></script>
     <script src="js/tese02.js"></script>
 
-
+    <script>
+        $("#checkOrder").on("click", function () {
+            localStorage.setItem("itemActive", 4);
+        });
+    </script>
 </body>
 
 </html>
