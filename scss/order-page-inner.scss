@@ -174,10 +174,30 @@ body {
 }
 
 .order-details-wrap {
-  .ml30 {
+  background-color: #fafafa;
+  padding: 20px;
+
+  .details-img {
     margin-left: 30px;
   }
-  .mr30 {
-    margin-right: 30px;
+
+  .details-info {
+    h4 {
+      font-size: 18px;
+      margin-bottom: 0;
+    }
+    p {
+      color: $black-light;
+      margin-bottom: 2px;
+    }
+    .price {
+      color: #f2711c;
+    }
+  }
+}
+
+.details-info-2 {
+  .section-1 {
+    text-align: right;
   }
 }
