@@ -1,14 +1,4 @@
 @font-face {
-  font-family: "Microsoft JhengHei bold";
-  src: url(../fonts/msjhbd.ttc);
-}
-
-@font-face {
-  font-family: "Microsoft JhengHei ight";
-  src: url(../fonts/msjh.ttc);
-}
-
-@font-face {
   font-family: "Noto Sans";
   src: url(../fonts/NotoSansTC-Regular.otf);
 }
@@ -26,10 +16,12 @@ body {
   flex-direction: column;
   min-height: 100vh;
 
-  > article {
+  >article {
     flex: 1;
   }
 }
+
+
 
 .bg-orange {
   background-color: $orange-primary;
