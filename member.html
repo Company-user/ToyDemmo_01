@@ -20,13 +20,13 @@
             <div class="nav nav-tabs" id="nav-tab" role="tablist">
                 <a class="nav-link active" id="nav-home-tab" onClick="changeSubNav(1)" data-toggle="tab"
                     href="#Personal-information" aria-selected="true">個人資訊</a>
-                <a class="nav-link" id="nav-profile-tab" onClick="changeSubNav(2)" data-toggle="tab" href="#store-money"
+                <a class="nav-link" id="nav-pay-tab" onClick="changeSubNav(2)" data-toggle="tab" href="#store-money"
                     aria-selected="false">商店購物金</a>
-                <a class="nav-link" id="nav-message-tab" onClick="changeSubNav(3)" data-toggle="tab" href="#message"
+                <a class="nav-link" id="nav-msg-tab" onClick="changeSubNav(3)" data-toggle="tab" href="#message"
                     aria-selected="false">訊息</a>
                 <a class="nav-link" id="nav-order-tab" onClick="changeSubNav(4)" data-toggle="tab" href="#order"
                     aria-selected="false">訂單</a>
-                <a class="nav-link" id="nav-list-tab" onClick="changeSubNav(5)" data-toggle="tab" href="#Tracking-list"
+                <a class="nav-link" id="nav-list-tab" onClick="changeSubNav(5)" data-toggle="tab" href="#tracking-list"
                     aria-selected="false">追蹤清單</a>
             </div>
         </nav>
@@ -165,6 +165,67 @@
                     </div>
                 </div>
             </div>
+            <div class="tab-pane fade" id="store-money">
+                <div class="store-money-wrap">
+                    <h3>現有購物金<span class="ml-3">0</span></h3>
+                    <p>購物金紀錄</p>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">日期</th>
+                                <th scope="col">項目</th>
+                                <th scope="col">款項</th>
+                                <th scope="col">到期日</th>
+                                <th scope="col">餘額</th>
+                            </tr>
+                        </thead>
+                    </table>
+                    <div class="no-record">
+                        <img src="img/member/no-record.svg" alt="">
+                        <p>尚未有紀錄</p>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="message">
+                <div class="no-msg">
+                    <img src="img/member/no-msg.svg" alt="">
+                    <p>尚未有訊息</p>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="tracking-list">
+                <div class="row no-gutters tracking-list-wrap">
+                    <div class="col-md-7 info">
+                        <img src="img/member/like-item-1.jpg" class="list-img" alt="">
+                        <a href="#">KAIYODO 海洋堂 山口遺產 特攝轉輪 迪士尼 玩具總動員 胡迪 WOODY</a>
+                        <div class="price">$1,600</div>
+                    </div>
+                    <div class="col-md-5 item-wrap">
+                        <div class="add-shoppingCar">
+                            <a href="#" class="btn">加入購物車</a>
+                        </div>
+                        <div class="btn delete-item">
+                            <img src="img/member/delete.svg" class="delete-icon" width="16" alt="">
+                            <span class="ml-2">刪除</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row no-gutters tracking-list-wrap">
+                    <div class="col-md-7 info">
+                        <img src="img/member/like-item-2.jpg" class="list-img" alt="">
+                        <a href="#">KAIYODO 海洋堂 山口遺產 特攝轉輪 迪士尼 玩具總動員 胡迪 WOODY</a>
+                        <div class="price">$1,600</div>
+                    </div>
+                    <div class="col-md-5 item-wrap">
+                        <div class="add-shoppingCar">
+                            <a href="#" class="btn">加入購物車</a>
+                        </div>
+                        <div class="btn delete-item">
+                            <img src="img/member/delete.svg" class="delete-icon" width="16" alt="">
+                            <span class="ml-2">刪除</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -193,15 +254,15 @@
                 $("#Personal-information").addClass("show active");
                 $("#nav-home-tab").addClass("active");
             } else if (curItemActive == 2) {
-                $("#nav-profile-tab").addClass("active");
+                $("#nav-pay-tab").addClass("show");
             } else if (curItemActive == 3) {
-                $("#nav-message-tab").addClass("active");
+                $("#nav-msg-tab").addClass("show");
             } else if (curItemActive == 4) {
                 $(".tab-pane").removeClass("show active");
                 $("#order").addClass("show active");
                 $("#nav-order-tab").addClass("active");
             } else if (curItemActive == 5) {
-                $("#nav-list-tab").addClass("active");
+                $("#nav-list-tab").addClass("show");
             }
         }
 
