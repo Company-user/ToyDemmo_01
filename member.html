@@ -250,7 +250,7 @@
         function subNav(curItemActive) {
             $(".nav-link").removeClass("active");
             if (curItemActive == 1 || !curItemActive) {
-                $("#order").removeClass("show active");
+                $("#order, #message, #store-money, #tracking-list").removeClass("show active");
                 $("#Personal-information").addClass("show active");
                 $("#nav-home-tab").addClass("active");
             } else if (curItemActive == 2) {
