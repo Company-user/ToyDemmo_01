@@ -159,7 +159,12 @@ select {
     }
 
     h3 {
+      position: relative;
       font-size: 20px;
+      &:after{
+        position: absolute;
+        
+      }
     }
   }
 
@@ -290,12 +295,6 @@ select {
   }
 }
 
-footer {
-  position: fixed;
-  width: 100%;
-  bottom: 0;
-  left: 0;
-}
 
 @media (max-width: 1600px) {
   footer {

@@ -16,12 +16,25 @@ body {
   flex-direction: column;
   min-height: 100vh;
 
-  >article {
+  > article {
     flex: 1;
   }
 }
 
+@media (max-width: 768px) {
+  .container {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
 
+
+@media (max-width: 768px) {
+  .navbar-expand-lg {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+}
 
 .bg-orange {
   background-color: $orange-primary;

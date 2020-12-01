@@ -46,8 +46,7 @@ var nav =
                 </button>
 
                 <div class="collapse navbar-collapse " id="navbarSupportedContent">
-                    <ul class="navbar-nav ml-auto">
-                        
+                    <ul class="navbar-nav ml-auto">  
                         <li class="nav-item header-nav-item">
                             <a class="nav-link header-nav-link text-center nav-active-home" href="index.html">首頁</a>
                         </li>
