@@ -206,7 +206,7 @@
 }
 
 .card-footer {
-  .text-muted .btn-blue {
+  .text-muted a {
     background-color: $blue-primary;
     color: #fff;
     border-radius: 50px;
@@ -241,7 +241,7 @@
   .card-footer {
     padding: 10px;
 
-    .text-muted .btn {
+    .text-muted .btn a {
       font-size: 14px;
       margin: 0 auto;
       padding: 5px 20px;
