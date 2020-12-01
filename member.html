@@ -130,6 +130,33 @@
                             </div>
                         </form>
                     </div>
+                    <div class="tab-pane fade" id="store-money">
+                        <div class="store-money-wrap">
+                            <h3><i class="fas fa-caret-right mr-1"></i>現有購物金<span class="ml-3">0</span></h3>
+                            <p>購物金紀錄</p>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">日期</th>
+                                        <th scope="col">項目</th>
+                                        <th scope="col">款項</th>
+                                        <th scope="col">到期日</th>
+                                        <th scope="col">餘額</th>
+                                    </tr>
+                                </thead>
+                            </table>
+                            <div class="no-record">
+                                <img src="img/member/no-record.svg" alt="">
+                                <p>尚未有紀錄</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="message">
+                        <div class="no-msg">
+                            <img src="img/member/no-msg.svg" alt="">
+                            <p>尚未有訊息</p>
+                        </div>
+                    </div>
                     <div class="tab-pane fade" id="order">
                         <div class="row no-gutters status-bar">
                             <div class="col-md-6">
@@ -168,33 +195,6 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="tab-pane fade" id="store-money">
-                        <div class="store-money-wrap">
-                            <h3><i class="fas fa-caret-right mr-1"></i>現有購物金<span class="ml-3">0</span></h3>
-                            <p>購物金紀錄</p>
-                            <table class="table">
-                                <thead>
-                                    <tr>
-                                        <th scope="col">日期</th>
-                                        <th scope="col">項目</th>
-                                        <th scope="col">款項</th>
-                                        <th scope="col">到期日</th>
-                                        <th scope="col">餘額</th>
-                                    </tr>
-                                </thead>
-                            </table>
-                            <div class="no-record">
-                                <img src="img/member/no-record.svg" alt="">
-                                <p>尚未有紀錄</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tab-pane fade" id="message">
-                        <div class="no-msg">
-                            <img src="img/member/no-msg.svg" alt="">
-                            <p>尚未有訊息</p>
                         </div>
                     </div>
                     <div class="tab-pane fade" id="tracking-list">
@@ -254,21 +254,38 @@
 
     <script>
         function subNav(curItemActive) {
+            if (!curItemActive) {
+                curItemActive = 1;
+            }
+
             $(".nav-link").removeClass("active");
-            if (curItemActive == 1 || !curItemActive) {
-                $("#order, #message, #store-money, #tracking-list").removeClass("show active");
-                $("#Personal-information").addClass("show active");
-                $("#nav-home-tab").addClass("active");
-            } else if (curItemActive == 2) {
-                $("#nav-pay-tab").addClass("show");
-            } else if (curItemActive == 3) {
-                $("#nav-msg-tab").addClass("show");
-            } else if (curItemActive == 4) {
-                $(".tab-pane").removeClass("show active");
-                $("#order").addClass("show active");
-                $("#nav-order-tab").addClass("active");
-            } else if (curItemActive == 5) {
-                $("#nav-list-tab").addClass("show");
+            $(".tab-pane").removeClass("active show");
+            switch (+curItemActive) {
+                //個人資訊
+                case 1:
+                    $("#Personal-information").addClass("show active");
+                    $("#nav-home-tab").addClass("active");
+                    break;
+                //商店購物金
+                case 2:
+                    $("#store-money").addClass("show");
+                    $("#nav-pay-tab,#store-money").addClass("active");
+                    break;
+                //訊息
+                case 3:
+                    $("#message").addClass("show");
+                    $("#nav-msg-tab, #message").addClass("active");
+                    break;
+                //訂單
+                case 4:
+                    $("#order").addClass("show");
+                    $("#nav-order-tab, #order").addClass("active");
+                    break;
+                //追蹤清單
+                case 5:
+                    $("#tracking-list").addClass("show");
+                    $("#nav-list-tab, #tracking-list").addClass("active");
+                    break;
             }
         }
 
