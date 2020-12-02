@@ -130,22 +130,22 @@
         </div>
     </nav>
 
-    <nav class="d-lg-none navbar sm-navbar navbar-light bg-white bottom-border p-0">
+    <nav class="d-lg-none navbar justify-content-start sm-navbar navbar-light bg-white bottom-border p-0">
         <div class="container">
-            <a class="navbar-brand" href="index.html"><img src="img/layout/logo.svg" alt=""></a>
+            <a class="navbar-brand mr-auto" href="index.html"><img src="img/layout/logo.svg" alt=""></a>
             <div class="search-group">
                 <form class="form-inline my-2 align-middle my-lg-0">
-                    <input class="form-control search-bar mr-sm-2" type="search" placeholder="請輸入關鍵字"
+                    <input class="form-control search-bar-sm mr-sm-2" type="search" placeholder="請輸入關鍵字"
                         aria-label="Search">
-                    <button class="btn search-bar-btn my-2 my-sm-0" type="submit">搜尋</button>
+                    <i class="fas fa-search"></i>
                 </form>
             </div>
             <div class="nav-item-dropdown">
                 <div class="dropdown">
-                    <button class="btn btn-cart " type="button" data-toggle="dropdown" aria-haspopup="true"
+                    <button class="btn btn-cart" type="button" data-toggle="dropdown" aria-haspopup="true"
                         aria-expanded="false">
                         <img src="img/layout/shopping-cart.svg" class="btn-car" alt="">
-                        <span class="badge badge-pill ">1</span>
+                        <span class="badge badge-pill">1</span>
                     </button>
                     <div class="dropdown-menu dropdown-menu-right dropdown-menu-car">
                         <h6 class="h6-text">最近加入的商品</h6>
@@ -171,10 +171,30 @@
                 </div>
                 </li>
             </div>
-            <div class="sm-navbar-dropdown">
-                <img src="img/layout/hamburg.svg" alt="">
-            </div>
+            <img src="img/layout/hamburg.svg" class="showmenu" alt="">
+        </div>
+        <div class="sm-navbar-dropdown">
+            <ul class="navbar-nav navbar-nav-sm">
+                <li class="nav-item">
+                    <a class="nav-link header-sm-nav-link nav-active-home" href="index.html">首頁</a>
+                </li>
 
+                <li class="nav-item">
+                    <a class="nav-link header-sm-nav-link nav-active-about" href="#">關於</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link header-sm-nav-link nav-active-product" href="productlist.html">產品</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link header-sm-nav-link nav-active-sale" href="#">優惠專區</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link header-sm-nav-link nav-active-contact" href="#">聯絡我們</a>
+                </li>
+            </ul>
         </div>
     </nav>
 
@@ -184,6 +204,16 @@
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="js/base.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.showmenu').on('click', function (e) {
+                e.preventDefault();
+                $('body').toggleClass('menu-show');
+            });
+        });
+    </script>
+
+
 </body>
 
 </html>

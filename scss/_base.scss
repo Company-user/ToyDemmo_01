@@ -28,7 +28,6 @@ body {
   }
 }
 
-
 @media (max-width: 768px) {
   .navbar-expand-lg {
     padding-left: 15px !important;
@@ -358,11 +357,45 @@ footer {
 
 //talk icon--> end
 
-
 //行動裝置navbar
 
-.sm-navbar{
-  
+.navbar .container {
+  justify-content: flex-start;
 }
 
+//設定 position: absolute; left:0; right:0; 讓項目block
 
+.navbar-nav-sm {
+  /*隱藏選單開始*/
+  max-height: 0px;
+  overflow: hidden;
+  /*隱藏選單結束*/
+  transition: max-height 2.3s;
+  margin-top: 1px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 83px;
+  padding: 0 15px;
+
+  .nav-item {
+    border-bottom: 1px solid #f3f3f3;
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+}
+
+/*jQ點擊後動態在 body 加上 class */
+.menu-show .navbar-nav-sm {
+  max-height: 500px;
+}
+
+.search-group {
+  position: relative;
+  .fa-search {
+    position: absolute;
+    right: 20px;
+    color: $blue-primary;
+  }
+}
