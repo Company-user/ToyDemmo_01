@@ -399,3 +399,24 @@ footer {
     color: $blue-primary;
   }
 }
+
+.nav-product-item {
+  position: relative;
+}
+
+.arrow-down {
+  position: absolute;
+  top: 18px;
+  right: 20px;
+  transform: (translateY(-50deg));
+}
+
+.sm-side-hot-item {
+  a {
+    color: #0796fc !important;
+  }
+}
+
+.card-header {
+  padding: 0;
+}
