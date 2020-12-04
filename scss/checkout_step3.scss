@@ -206,10 +206,10 @@
     border: 1px solid $orange-secondary;
     border-radius: 4px;
     padding: 6px 12px;
+     transition: 0.3s;
 
     &:hover {
       background-color: #ee9105;
-      transition: 0.3s;
     }
 
     &:focus {

@@ -147,10 +147,10 @@
     height: 40px;
     color: #fff;
     background-color: #fb9802;
+    transition: 0.3s;
 
     &:hover {
       background-color: #ee9105;
-      transition: 0.3s;
     }
   }
 }

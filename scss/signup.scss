@@ -5,7 +5,6 @@ body {
   background-color: #f3f3f3;
 }
 
-
 .email-btn-group,
 .google-btn-group,
 .fb-btn-group,
@@ -31,7 +30,6 @@ body {
   }
 }
 
-
 .google-btn-group {
   position: relative;
   border: 2px solid #cfd2d4;
@@ -40,13 +38,13 @@ body {
     position: absolute;
     left: 15px;
     top: 10px;
+    transition: 0.3s;
   }
 
   &:hover {
     border: 2px solid #cfd2d4;
     background-color: #f3f3f3;
     opacity: 0.7;
-    transition: 0.3s;
   }
 }
 
@@ -59,18 +57,18 @@ body {
     position: absolute;
     left: 15px;
     top: 12px;
+    transition: 0.3s;
   }
 
   &:hover {
     color: #fff;
     background-color: #33508b;
-    transition: 0.3s;
   }
 }
 
 .email-btn-group {
   position: relative;
-  background-color: #FF4B43;
+  background-color: #ff4b43;
   color: #fff;
 
   img {
@@ -100,7 +98,7 @@ footer {
   bottom: 0;
 }
 
-@media (max-width:1600px) {
+@media (max-width: 1600px) {
   footer {
     position: static;
     margin-top: 30px;
