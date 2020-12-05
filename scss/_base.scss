@@ -16,7 +16,7 @@ body {
   flex-direction: column;
   min-height: 100vh;
 
-  > article {
+  >article {
     flex: 1;
   }
 }
@@ -359,64 +359,96 @@ footer {
 
 //行動裝置navbar
 
-.navbar .container {
-  justify-content: flex-start;
-}
+@media(max-width:768px) {
 
-//設定 position: absolute; left:0; right:0; 讓項目block
+  .navbar .container {
+    justify-content: flex-start;
+  }
 
-.navbar-nav-sm {
-  /*隱藏選單開始*/
-  max-height: 0px;
-  overflow: hidden;
-  /*隱藏選單結束*/
-  transition: max-height 2.3s;
-  margin-top: 1px;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 83px;
-  padding: 0 15px;
+  //設定 position: absolute; left:0; right:0; 讓項目block
 
-  .nav-item {
-    border-bottom: 1px solid #f3f3f3;
-    &:last-child {
-      border-bottom: none;
+  .navbar-nav-sm {
+    /*隱藏選單開始*/
+    max-height: 0px;
+    overflow: hidden;
+    /*隱藏選單結束*/
+    transition: max-height 2.3s;
+    margin-top: 1px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 83px;
+    padding: 0 15px;
+
+    .nav-item {
+      border-bottom: 1px solid #f3f3f3;
+
+      &:last-child {
+        border-bottom: none;
+      }
     }
   }
-}
 
-/*jQ點擊後動態在 body 加上 class */
-.menu-show .navbar-nav-sm {
-  max-height: 500px;
-}
+  /*jQ點擊後動態在 body 加上 class */
+  .menu-show .navbar-nav-sm {
+    max-height: 1000px;
+  }
 
-.search-group {
-  position: relative;
-  .fa-search {
+  .search-group {
+    position: relative;
+
+    .fa-search {
+      position: absolute;
+      right: 20px;
+      color: $blue-primary;
+    }
+  }
+
+  .nav-product-item {
+    position: relative;
+  }
+
+  .arrow-down {
     position: absolute;
+    top: 18px;
     right: 20px;
-    color: $blue-primary;
+    transform: (translateY(-50deg));
   }
-}
 
-.nav-product-item {
-  position: relative;
-}
-
-.arrow-down {
-  position: absolute;
-  top: 18px;
-  right: 20px;
-  transform: (translateY(-50deg));
-}
-
-.sm-side-hot-item {
-  a {
-    color: #0796fc !important;
+  .sm-side-hot-item {
+    a {
+      color: #0796fc !important;
+    }
   }
-}
 
-.card-header {
-  padding: 0;
+  .card-header {
+    padding: 0;
+    background-color: #000;
+
+  }
+
+  .side-card-btn {
+    display: block;
+    width: 100%;
+    color: rgba(0, 0, 0, 0.5);
+    padding-left: 0;
+
+    &:hover {
+      color: #0796fc;
+      text-decoration: none;
+    }
+
+    &:focus {
+      color: #0796fc;
+      text-decoration: none;
+    }
+
+    &:active {
+      color: #0796fc;
+    }
+  }
+
+
+
+
 }
