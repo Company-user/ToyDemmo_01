@@ -39,6 +39,7 @@ var nav =
         <nav class="d-none d-lg-block navbar navbar-expand-lg navbar-light bg-white bottom-border p-0">
             <div class="container">
                 <a class="navbar-brand" href="index.html"><img src="img/layout/logo.svg" alt=""></a>
+
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -120,10 +121,12 @@ var nav =
         </nav> 
 
         <nav class="d-lg-none navbar justify-content-start sm-navbar navbar-light bg-white bottom-border p-0">
-        <div class="container">
-            <a class="navbar-brand mr-auto" href="index.html"><img src="img/layout/logo.svg" alt=""></a>
+        <div class="container sm-navbar-container">
+            <a class="d-none d-md-block navbar-brand mr-auto" href="index.html"><img src="img/layout/logo.svg"
+                    alt=""></a>
+            <a class="d-md-none navbar-brand mr-auto" href="index.html"><img src="img/layout/sm-logo.svg" alt=""></a>
             <div class="search-group">
-                <form class="form-inline my-2 align-middle my-lg-0">
+                <form class="form-inline search-sm-bar align-middle my-lg-0 my-2">
                     <input class="form-control search-bar-sm mr-sm-2" type="search" placeholder="請輸入關鍵字"
                         aria-label="Search">
                     <i class="fas fa-search"></i>

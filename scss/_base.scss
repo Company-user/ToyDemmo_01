@@ -360,7 +360,6 @@ footer {
 //行動裝置navbar
 
 @media(max-width:768px) {
-
   .navbar .container {
     justify-content: flex-start;
   }
@@ -449,8 +448,33 @@ footer {
       color: #0796fc;
     }
   }
+}
+
+@media(max-width:415px) {
+  .sm-navbar-container {
+    padding: 0 10px;
+  }
+
+  .navbar-nav-sm {
+    top: 60px;
+  }
+
+  .nav-item-dropdown {
+    width: 50px;
+    height: 60px;
+    line-height: 60px;
+    margin: 0 16px;
+  }
+
+  .search-sm-bar {
+    width: 200px;
+  }
+
+}
 
 
-
-
+@media(max-width:376px) {
+  .search-sm-bar {
+    width: 170px;
+  }
 }
