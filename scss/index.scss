@@ -19,17 +19,36 @@
 
 .main-title {
   h2 {
-    font-size: 1.875rem;
+    font-size: 30px;
     color: $black-primary;
-    line-height: normal;
-    padding-top: 3px;
+    line-height: 42px;
   }
 
-  p {
-    font-size: 1.875rem;
-    color: $blue-light;
-    padding-top: 3px;
+  span {
+    font-size: 20px;
+    vertical-align: baseline;
   }
+
+  img {
+    vertical-align: middle;
+  }
+}
+
+@media(max-width:415px) {
+  .main-title {
+    h2 {
+      font-size: 26px;
+      color: $black-primary;
+      line-height: 42px;
+      padding-top: 3px;
+    }
+
+    img {
+      width: 30px;
+    }
+
+  }
+
 }
 
 .news-img img {
@@ -39,7 +58,16 @@
 }
 
 .news-info {
+  position: relative;
   padding: 1rem;
+
+  &:after {
+    position: absolute;
+    content: '';
+    height: 100px;
+    left: 5px;
+    border-left: 4px solid#29A1F7;
+  }
 
   h5 {
     color: $black-primary;
@@ -57,8 +85,13 @@
 }
 
 @media (max-width: 768px) {
-  .news-card-body {
-    padding: 20px;
+  .news-rwd-container {
+    padding: 0;
+
+  }
+
+  .card-body {
+    padding: 20px 10px;
   }
 
   .news-btn {
@@ -66,6 +99,14 @@
     margin: 0 auto;
   }
 }
+
+@media(max-width:577px) {
+  .news-rwd-container {
+    padding: 0 15px;
+  }
+}
+
+
 
 .news-btn:hover,
 .product-btn:hover {
@@ -176,7 +217,7 @@
 }
 
 .hot-pills .nav-link.active,
-.hot-pills .show > .nav-link {
+.hot-pills .show>.nav-link {
   color: #fff;
   background-color: #cfd2d4;
   transition: 0.3s;
@@ -298,4 +339,3 @@ a:hover {
     width: 60%;
   }
 }
-

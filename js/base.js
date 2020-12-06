@@ -1,7 +1,7 @@
 var nav =
     ` <div class="nav-top-bar">
             <div class="container-fluid bg-orange">
-                <div class="container d-flex justify-content-between ">
+                <div class="container d-flex justify-content-between nav-rwd-top-bar">
                     <div class="dropdown dropdown-language">
                         <button class="btn btn-transparent dropdown-toggle text-white focus-btn language-btn"
                             type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
@@ -320,23 +320,45 @@ var nav =
         `
         
     var footer = `
-        <div class="container-fluid bg-orange">
+      <footer>
+        <div class="d-none d-md-block container-fluid bg-orange">
             <div class="container">
                 <ul class="d-flex justify-content-center align-items-center footer-menu">
-                        <li class="footer-item"> 
-                            <a href="" class="footer-link"> 關於SINGULAR </a>
-                        </li>
-                        <li class="footer-item">
-                            <a href=""  class="footer-link">  用戶協議</a>
-                        </li>
-                        <li class="footer-item">
-                            <a href=""  class="footer-link"> 隱私政策 </a>
-                        </li>
-                        <li class="footer-item">
-                            <a href=""  class="footer-link"> 幫助中心</a>
-                        </li>
+                    <li class="footer-item">
+                        <a href="" class="footer-link"> 關於SINGULAR </a>
+                    </li>
+                    <li class="footer-item">
+                        <a href="" class="footer-link"> 用戶協議</a>
+                    </li>
+                    <li class="footer-item">
+                        <a href="" class="footer-link"> 隱私政策 </a>
+                    </li>
+                    <li class="footer-item">
+                        <a href="" class="footer-link"> 幫助中心</a>
+                    </li>
                 </ul>
 
+            </div>
+        </div>
+
+        <div class="d-md-none container-fluid bg-orange">
+            <div class="container">
+                <ul class="d-flex justify-content-between footer-menu mb-0">
+                    <li class="footer-item">
+                        <a href="#" class="footer-link"> 關於SINGULAR </a>
+                    </li>
+                    <li class="footer-item">
+                        <a href="#" class="footer-link"> 用戶協議</a>
+                    </li>
+                </ul>
+                <ul class="d-flex justify-content-between footer-menu mb-0">
+                    <li class="footer-item">
+                        <a href="#" class="footer-link"> 隱私政策 </a>
+                    </li>
+                    <li class="footer-item">
+                        <a href="#" class="footer-link"> 幫助中心</a>
+                    </li>
+                </ul>
             </div>
         </div>
 
@@ -344,40 +366,42 @@ var nav =
             <div class="container">
                 <div class="row footer-contact">
                     <div class="col-md-4">
-                        <div class="section-1  text-center">
+                        <div class="section-1">
                             <div class="logo mb-3">
                                 <img src="img/layout/logo.svg" alt="">
                             </div>
                             <div class="subscribe">
-                                <img src="img/layout/fb-icon.svg" class="mr-2" alt="">
-                                <img src="img/layout/ig-icon.svg" alt="">
+                                <a href="#"><img src="img/layout/fb-icon.svg" alt="FB-icon"></a>
+                                <a href="#"><img src="img/layout/ig-icon.svg" alt="IG-icon"></a>
                             </div>
                         </div>
-
                     </div>
                     <div class="col-md-4 ">
                         <h6 class="title">
                             Singujar Co. Ltd
                         </h6>
-                        <p class="info">（04637）首爾特別市中區漢江大路416號首爾廣場</br>
+                        <p class="info">(04637)首爾特別市中區漢江大路416號首爾廣場</br>
                             電話：+ 82-2-1599-0110</br>
                             傳真：+ 82-2-849-4962
                         </p>
                     </div>
                     <div class="col-md-4">
                         <h6>客戶服務中心</h6>
-                        <p>（04637）首爾特別市中區漢江大路416號首爾廣場</br>
+                        <p>(04637)首爾特別市中區漢江大路416號首爾廣場</br>
                             電話：+ 82-2-1599-0110</br>
                             傳真：+ 82-2-849-4962
                         </p>
                     </div>
                 </div>
             </div>
+
         </div>
         <hr class="footer-line">
         <div class="copylight text-center py-3">
             copyright@2020
-        </div> `
+        </div>
+    </footer>
+       `
 
     
    var fixedicon = `<a href="#" class="talk-btn">

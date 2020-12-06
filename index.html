@@ -54,11 +54,11 @@
     </header>
 
     <section class="news-spacing">
-        <div class="container">
-            <div class="main-title d-md-flex mb-3">
-                <img src="img/index/news-star.svg" class="mr-3" alt="">
-                <h2 class="m-0 pr-3">最新消息</h2>
-                <p class="m-0">NEWS</p>
+        <div class="container news-rwd-container">
+            <div class="main-title mb-3">
+                <h2 class="m-0 pr-3"><img src="img/index/news-star.svg" class="mr-3" width="35" alt="">最新消息<span
+                        class="m-0 ml-3" style="color:#11CDEF;">NEWS</span></h2>
+
             </div>
 
             <!--carousel-fade 為更改輪播為淡入淡出-->
@@ -70,7 +70,7 @@
                 </ol>
                 <div class="carousel-inner news-carousel-inner">
                     <div class="carousel-item active">
-                        <div class="card news-card-body">
+                        <div class="card news-rwd-card-body">
                             <div class="card-body ">
                                 <div class="row no-gutters">
                                     <div class="col-lg-6">
@@ -80,7 +80,6 @@
                                     </div>
                                     <div class="col-lg-6">
                                         <div class="news-info d-flex mb-5">
-                                            <div class="vertical-line-4"></div>
                                             <div class="pl-2">
                                                 <h5>Figuarts ZERO</h5>
                                                 <p>BANDAI Figuarts ZERO 超激戰 航海王 波雅・漢考克 頂上決戰
@@ -99,8 +98,8 @@
                     </div>
 
                     <div class="carousel-item">
-                        <div class="card">
-                            <div class="card-body">
+                        <div class="card ">
+                            <div class="card-body news-rwd-card-body">
                                 <div class="row no-gutters">
                                     <div class="col-lg-6">
                                         <div class="news-img">
@@ -109,7 +108,6 @@
                                     </div>
                                     <div class="col-lg-6">
                                         <div class="news-info d-flex mb-5">
-                                            <div class="vertical-line-4"></div>
                                             <div class="pl-2">
                                                 <h5>BANDAI Figuarts ZERO</h5>
                                                 <p>BANDAI Figuarts ZERO 超激戰 航海王 波雅・漢考克 頂上決戰
@@ -130,7 +128,7 @@
 
                     <div class="carousel-item">
                         <div class="card">
-                            <div class="card-body">
+                            <div class="card-body news-rwd-card-body">
                                 <div class="row no-gutters">
                                     <div class="col-lg-6">
                                         <div class="news-img">
@@ -139,7 +137,6 @@
                                     </div>
                                     <div class="col-lg-6">
                                         <div class="news-info d-flex mb-5">
-                                            <div class="vertical-line-4"></div>
                                             <div class="pl-2">
                                                 <h5>BANDAI Figuarts</h5>
                                                 <p>BANDAI Figuarts ZERO 超激戰 航海王 波雅・漢考克 頂上決戰
@@ -164,12 +161,11 @@
 
 
     <section>
-        <div class="container-fluid bg-color py-5">
+        <div class="container-fluid bg-color py-4 ">
             <div class="container custom-gutters">
-                <div class="main-title d-md-flex mb-5">
-                    <img src="img/index/product-star.svg" class="mr-3" alt="">
-                    <h2 class="m-0 pr-3">熱銷商品</h2>
-                    <p class="m-0" style="color: #FBBD08;">HOT PTODUCTS</p>
+                <div class="main-title mb-5">
+                    <h2 class="m-0 pr-3"><img src="img/index/product-star.svg" class="mr-3" width="35" alt="">熱銷商品<span
+                            class="m-0 pl-3" style="color: #FBBD08;">HOT PTODUCTS</span></h2>
                 </div>
 
                 <!--tablist 預設為flex屬性 最外層可直接指定 ,套件ul裡面不可再包div會出錯-->
@@ -200,7 +196,7 @@
                 <div class="tab-content mb-4" id="pills-tabContent">
                     <div class="tab-pane fade show active" id="pills-home-1" role="tabpanel"
                         aria-labelledby="pills-home-tab">
-                        <div class="row mb-3">
+                        <div class="row">
                             <div class="col-6 col-md-3">
                                 <a href="product.html">
                                     <div class="card-deck mb-3">
@@ -219,9 +215,9 @@
                                 </a>
                             </div>
 
-                            <div class="col-6 col-md-3 mb-3">
+                            <div class="col-6 col-md-3">
                                 <a href="product.html">
-                                    <div class="card-deck ">
+                                    <div class="card-deck mb-3">
                                         <div class="card hot-product card-shadow">
                                             <img src="img/index/list-item-1.jpg" class="card-img-top" alt="...">
                                             <div class="card-body">
@@ -238,7 +234,7 @@
                             </div>
                             <a href="product.html">
                                 <div class="col-6 col-md-3">
-                                    <div class="card-deck">
+                                    <div class="card-deck mb-3">
                                         <div class="card hot-product card-shadow">
                                             <img src="img/index/list-item-2.jpg" class="card-img-top" alt="...">
                                             <div class="card-body">
@@ -256,7 +252,7 @@
 
                             <a href="product.html">
                                 <div class="col-6 col-md-3">
-                                    <div class="card-deck">
+                                    <div class="card-deck mb-3">
                                         <div class="card hot-product card-shadow">
                                             <img src="img/index/list-item-3.jpg" class="card-img-top" alt="...">
                                             <div class="card-body">
@@ -273,12 +269,10 @@
                             </a>
                         </div>
 
-
-
-                        <div class="row mb-">
-                            <div class="col-6 col-md-3 mb-3">
+                        <div class="row">
+                            <div class="col-6 col-md-3">
                                 <a href="product.html">
-                                    <div class="card-deck">
+                                    <div class="card-deck mb-3">
                                         <div class="card hot-product card-shadow">
                                             <img src="img/index/list-item-6.jpg" class="card-img-top" alt="...">
                                             <div class="card-body">
@@ -297,7 +291,7 @@
 
                             <div class="col-6 col-md-3">
                                 <a href="product.html">
-                                    <div class="card-deck">
+                                    <div class="card-deck mb-3">
                                         <div class="card hot-product card-shadow">
                                             <img src="img/index/list-item-1.jpg" class="card-img-top" alt="...">
                                             <div class="card-body">
@@ -316,7 +310,7 @@
 
                             <div class="col-6 col-md-3">
                                 <a href="product.html">
-                                    <div class="card-deck">
+                                    <div class="card-deck mb-3">
                                         <div class="card hot-product card-shadow">
                                             <img src="img/index/list-item-2.jpg" class="card-img-top" alt="...">
                                             <div class="card-body">
@@ -334,7 +328,7 @@
 
                             <div class="col-6 col-md-3">
                                 <a href="product.html">
-                                    <div class="card-deck">
+                                    <div class="card-deck mb-3">
                                         <div class="card hot-product card-shadow">
                                             <img src="img/index/list-item-3.jpg" class="card-img-top" alt="...">
                                             <div class="card-body">
@@ -355,10 +349,10 @@
 
 
                     <div class="tab-pane fade" id="pills-home-2" role="tabpanel" aria-labelledby="pills-profile-tab">
-                        <div class="row mb-3">
+                        <div class="row">
                             <div class="col-6 col-md-3">
                                 <a href="product.html">
-                                    <div class="card-deck">
+                                    <div class="card-deck mb-3">
                                         <div class="card hot-product card-shadow">
                                             <img src="img/index/list-item-5.jpg" class="card-img-top" alt="...">
                                             <div class="card-body">
@@ -377,7 +371,7 @@
 
                             <div class="col-6 col-md-3">
                                 <a href="product.html">
-                                    <div class="card-deck">
+                                    <div class="card-deck mb-3">
                                         <div class="card hot-product card-shadow">
                                             <img src="img/index/list-item-6.jpg" class="card-img-top" alt="...">
                                             <div class="card-body">
@@ -396,7 +390,7 @@
 
                             <div class="col-6 col-md-3">
                                 <a href="product.html">
-                                    <div class="card-deck">
+                                    <div class="card-deck mb-3">
                                         <div class="card hot-product card-shadow">
                                             <img src="img/index/list-item-1.jpg" class="card-img-top" alt="...">
                                             <div class="card-body">
@@ -415,7 +409,7 @@
 
                             <div class="col-6 col-md-3">
                                 <a href="product.html">
-                                    <div class="card-deck">
+                                    <div class="card-deck mb-3">
                                         <div class="card hot-product card-shadow">
                                             <img src="img/index/list-item-2.jpg" class="card-img-top" alt="...">
                                             <div class="card-body">
@@ -435,10 +429,10 @@
 
                         </div>
 
-                        <div class="row mb-3">
+                        <div class="row">
                             <div class="col-6 col-md-3">
                                 <a href="product.html">
-                                    <div class="card-deck">
+                                    <div class="card-deck mb-3">
                                         <div class="card hot-product card-shadow">
                                             <img src="img/index/list-item-5.jpg" class="card-img-top" alt="...">
                                             <div class="card-body">
@@ -457,7 +451,7 @@
 
                             <div class="col-6 col-md-3">
                                 <a href="product.html">
-                                    <div class="card-deck">
+                                    <div class="card-deck mb-3">
                                         <div class="card hot-product card-shadow">
                                             <img src="img/index/list-item-6.jpg" class="card-img-top" alt="...">
                                             <div class="card-body">
@@ -476,7 +470,7 @@
 
                             <div class="col-6 col-md-3">
                                 <a href="product.html">
-                                    <div class="card-deck">
+                                    <div class="card-deck mb-3">
                                         <div class="card hot-product card-shadow">
                                             <img src="img/index/list-item-1.jpg" class="card-img-top" alt="...">
                                             <div class="card-body">
@@ -495,7 +489,7 @@
 
                             <div class="col-6 col-md-3">
                                 <a href="product.html">
-                                    <div class="card-deck">
+                                    <div class="card-deck mb-3">
                                         <div class="card hot-product card-shadow">
                                             <img src="img/index/list-item-2.jpg" class="card-img-top" alt="...">
                                             <div class="card-body">
