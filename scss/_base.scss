@@ -377,7 +377,7 @@ footer {
     position: absolute;
     left: 0;
     right: 0;
-    top: 83px;
+    top: 82px;
     padding: 0 15px;
 
     .nav-item {
@@ -392,6 +392,8 @@ footer {
   /*jQ點擊後動態在 body 加上 class */
   .menu-show .navbar-nav-sm {
     max-height: 1000px;
+    z-index: 1000;
+    background-color: #fff;
   }
 
   .search-group {

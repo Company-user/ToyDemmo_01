@@ -36,7 +36,7 @@ var nav =
             </div>
         </div>
 
-        <nav class="navbar navbar-expand-lg navbar-light bg-white bottom-border p-0">
+        <nav class="d-none d-lg-block navbar navbar-expand-lg navbar-light bg-white bottom-border p-0">
             <div class="container">
                 <a class="navbar-brand" href="index.html"><img src="img/layout/logo.svg" alt=""></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
@@ -117,7 +117,204 @@ var nav =
                     </ul>
                 </div>
             </div>
-        </nav> `
+        </nav> 
+
+        <nav class="d-lg-none navbar justify-content-start sm-navbar navbar-light bg-white bottom-border p-0">
+        <div class="container">
+            <a class="navbar-brand mr-auto" href="index.html"><img src="img/layout/logo.svg" alt=""></a>
+            <div class="search-group">
+                <form class="form-inline my-2 align-middle my-lg-0">
+                    <input class="form-control search-bar-sm mr-sm-2" type="search" placeholder="請輸入關鍵字"
+                        aria-label="Search">
+                    <i class="fas fa-search"></i>
+                </form>
+            </div>
+            <div class="nav-item-dropdown">
+                <div class="dropdown">
+                    <button class="btn btn-cart" type="button" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        <img src="img/layout/shopping-cart.svg" class="btn-car" alt="">
+                        <span class="badge badge-pill">1</span>
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right dropdown-menu-car">
+                        <h6 class="h6-text">最近加入的商品</h6>
+                        <div class="dropdown-divider"></div>
+                        <a href="product.html" class="d-flex">
+                            <div class="dropdown-item car-list-dropdown-item p-2" type="button">
+                                <div class="d-flex">
+                                    <div class="car-item-img mr-3">
+                                        <img src="img/layout/car-item-1.jpg" class="car-list-item" alt="">
+                                    </div>
+                                    <div class="car-list-info ">
+                                        <h5>玩具總動員方形收納箱...</h5>
+                                        <h6>規格:小丑</h6>
+                                        <h4>$1,200</h4>
+                                    </div>
+                                    <div class="trash">
+                                        <a href="#"><i class="fas fa-trash"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                </li>
+            </div>
+            <img src="img/layout/hamburg.svg" class="showmenu" alt="">
+        </div>
+        <div class="sm-navbar-dropdown">
+            <ul class="navbar-nav navbar-nav-sm">
+                <li class="nav-item">
+                    <a class="nav-link header-sm-nav-link nav-active-home" href="index.html">首頁</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link header-sm-nav-link nav-active-about" href="#">關於</a>
+                </li>
+
+                <li class="nav-item">
+                    <div class="nav-product-item">
+                        <a class="nav-link header-sm-nav-link nav-active-product" data-toggle="collapse"
+                            href="#collapseExample">產品</a>
+                        <img src="img/productlist/arrow-down.svg" class="arrow-down" width="15" alt="">
+                    </div>
+                    <div class="collapse" id="collapseExample">
+                        <ul class="nav flex-column">
+                            <li class="nav-item sm-side-hot-item">
+                                <a class="nav-link active" href="#"><img src="img/productlist/arrow-item.svg" width="8"
+                                        alt="">
+                                    發燒新品【現貨】專區</a>
+                            </li>
+                            <li class="nav-item sm-side-hot-item">
+                                <a class="nav-link" href="#"> <img src="img/productlist/arrow-item.svg" width="8"
+                                        alt="">
+                                    發燒新品【預購】專區</a>
+                            </li>
+                            <li class="nav-item sm-side-hot-item">
+                                <a class="nav-link" href="#"><img src="img/productlist/arrow-item.svg" width="8" alt="">
+                                    DC-精選優惠活動</a>
+                            </li>
+
+                        </ul>
+
+                        <div class="accordion" id="accordionExample">
+                            <div class="card border-0">
+                                <div class="card-header side-card-header bg-transparent border-0" id="headingOne">
+                                    <h2 class="mb-0">
+                                        <button
+                                            class="btn btn-link side-card-btn d-flex justify-content-between text-left"
+                                            type="button" data-toggle="collapse" data-target="#collapseOne"
+                                            aria-expanded="true" aria-controls="collapseOne">
+                                            <span class="pr-2">迪士尼</span>
+                                            <div> <img src="img/productlist/arrow-down.svg" width="15" alt=""></div>
+                                        </button>
+                                    </h2>
+                                </div>
+
+                                <div id="collapseOne" class="collapse">
+                                    <div class="card-body side-card-body bg-transparent border-0">
+                                        <ul class="nav flex-column">
+                                            <li class="nav-item">
+                                                <a class="nav-link ml-3" href="productlist.html" tabindex="-1"
+                                                    aria-disabled="true">
+                                                    玩具總動員</a>
+                                            </li>
+                                            <li class="nav-item ml-3">
+                                                <a class="nav-link" href="productlist.html">
+                                                    白雪公主</a>
+                                            </li>
+                                            <li class="nav-item ml-3">
+                                                <a class="nav-link" href="productlist.html">
+                                                    木偶奇遇記</a>
+                                            </li>
+                                            <li class="nav-item ml-3">
+                                                <a class="nav-link" href="productlist.html">
+                                                    小飛象</a>
+                                            </li>
+                                            <li class="nav-item ml-3">
+                                                <a class="nav-link" href="productlist.html">
+                                                    魔鏡夢遊</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card border-0">
+                                <div class="card-header side-card-header bg-transparent border-0" id="headingTwo">
+                                    <h2 class="mb-0">
+                                        <button
+                                            class="btn btn-link side-card-btn d-flex justify-content-between text-left"
+                                            type="button" data-toggle="collapse" data-target="#collapseTwo"
+                                            aria-expanded="false" aria-controls="collapseOne">
+                                            <span>鋼彈模型</span>
+                                            <div> <img src="img/productlist/arrow-down.svg" width="15" alt=""></div>
+
+                                        </button>
+                                    </h2>
+                                </div>
+
+                                <div id="collapseTwo" class="collapse">
+                                    <div class="card-body side-card-body bg-transparent border-0">
+                                        <ul class="nav flex-column">
+                                            <li class="nav-item ml-3">
+                                                <a class="nav-link" href="#">
+                                                    高達鋼彈</a>
+                                            </li>
+                                            <li class="nav-item ml-3">
+                                                <a class="nav-link" href="#">
+                                                    鋼彈SEED</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card border-0">
+                                <div class="card-header side-card-header bg-transparent border-0" id="headingThree">
+                                    <h2 class="mb-0">
+                                        <button
+                                            class="btn btn-link side-card-btn d-flex justify-content-between text-left"
+                                            type="button" data-toggle="collapse" data-target="#collapseThree"
+                                            aria-expanded="false" aria-controls="collapseOne">
+                                            <span>新世紀福音戰士</span>
+                                            <div> <img src="img/productlist/arrow-down.svg" width="15" alt=""></div>
+                                        </button>
+                                    </h2>
+                                </div>
+
+                                <div id="collapseThree" class="collapse">
+                                    <div class="card-body side-card-body bg-transparent border-0">
+                                        <ul class="nav flex-column">
+                                            <li class="nav-item ml-3">
+                                                <a class="nav-link" href="#">
+                                                    碇真嗣</a>
+                                            </li>
+                                            <li class="nav-item ml-3">
+                                                <a class="nav-link" href="#">
+                                                    惣流·明日香·蘭格雷</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link header-sm-nav-link nav-active-sale" href="#">優惠專區</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link header-sm-nav-link nav-active-contact" href="#">聯絡我們</a>
+                </li>
+            </ul>
+        </div>
+    </nav>  
+        `
         
     var footer = `
         <div class="container-fluid bg-orange">
@@ -212,8 +409,16 @@ $(function () {
         $('html, body').animate({ scrollTop: 0 }, 1000);
     });
 
+    
     $("#enterCenter").on("click",function(){
         localStorage.setItem("itemActive", 1);
+    });
+
+
+    //漢堡選單
+    $('.showmenu').on('click', function (e) {
+        e.preventDefault();
+        $('body').toggleClass('menu-show');
     });
 });
    
