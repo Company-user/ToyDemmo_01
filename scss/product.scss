@@ -107,6 +107,13 @@
   height: 400px;
 }
 
+@media(max-width:768px) {
+  .product-carousel-item {
+    height: 300px;
+  }
+
+}
+
 .bg-cover {
   background-size: cover;
   background-position: center center;
@@ -234,6 +241,10 @@
 .proudct-info {
   padding-top: 50px;
 
+  img {
+    width: 100%;
+  }
+
   h4 {
     font-size: 22px;
     color: $black-light;
@@ -290,6 +301,7 @@
 }
 
 .add-shoppingCar {
+
   .modal-footer,
   .modal-header {
     justify-content: center;

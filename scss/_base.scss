@@ -16,7 +16,7 @@ body {
   flex-direction: column;
   min-height: 100vh;
 
-  > article {
+  >article {
     flex: 1;
   }
 }
@@ -310,8 +310,8 @@ footer {
     text-align: center;
     padding: 10px 16px;
 
-    &:nth-child(2n) ::after {
-      display: none;
+    &:nth-child(2n):after {
+      position: static;
     }
   }
 
