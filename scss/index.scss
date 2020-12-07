@@ -34,7 +34,7 @@
   }
 }
 
-@media(max-width:415px) {
+@media (max-width: 415px) {
   .main-title {
     h2 {
       font-size: 26px;
@@ -46,9 +46,7 @@
     img {
       width: 30px;
     }
-
   }
-
 }
 
 .news-img img {
@@ -63,7 +61,7 @@
 
   &:after {
     position: absolute;
-    content: '';
+    content: "";
     height: 100px;
     left: 5px;
     border-left: 4px solid#29A1F7;
@@ -87,7 +85,6 @@
 @media (max-width: 768px) {
   .news-rwd-container {
     padding: 0;
-
   }
 
   .card-body {
@@ -100,13 +97,11 @@
   }
 }
 
-@media(max-width:577px) {
+@media (max-width: 577px) {
   .news-rwd-container {
     padding: 0 15px;
   }
 }
-
-
 
 .news-btn:hover,
 .product-btn:hover {
@@ -217,7 +212,7 @@
 }
 
 .hot-pills .nav-link.active,
-.hot-pills .show>.nav-link {
+.hot-pills .show > .nav-link {
   color: #fff;
   background-color: #cfd2d4;
   transition: 0.3s;
@@ -261,16 +256,16 @@
 
   .hot-product {
     .card-title {
-      font-size: 13px;
+      font-size: 16px;
       margin-bottom: 8px;
     }
 
     .card-text {
-      font-size: 12px;
+      font-size: 14px;
     }
 
     .price {
-      font-size: 14px;
+      font-size: 16px;
     }
   }
 

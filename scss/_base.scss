@@ -16,7 +16,7 @@ body {
   flex-direction: column;
   min-height: 100vh;
 
-  >article {
+  > article {
     flex: 1;
   }
 }
@@ -304,27 +304,26 @@ footer {
   }
 }
 
-@media(max-width:577px) {
+@media (max-width: 577px) {
   footer .footer-menu .footer-item {
     width: 50%;
     text-align: center;
     padding: 10px 16px;
 
-    &:nth-child(2n) {
-      position: initial;
+    &:nth-child(2n) ::after {
+      display: none;
     }
   }
 
   footer .footer-contact .section-1 {
-    text-align: left;
-    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
 
     .subscribe img {
       width: 40px;
-      margin-left: 20px;
+      margin-left: 12px;
     }
   }
-
 }
 
 //top icon--> start
@@ -372,7 +371,7 @@ footer {
 
 //行動裝置navbar
 
-@media(max-width:768px) {
+@media (max-width: 768px) {
   .navbar .container {
     justify-content: flex-start;
   }
@@ -438,7 +437,6 @@ footer {
   .card-header {
     padding: 0;
     background-color: #000;
-
   }
 
   .side-card-btn {
@@ -463,7 +461,7 @@ footer {
   }
 }
 
-@media(max-width:415px) {
+@media (max-width: 415px) {
   .nav-rwd-top-bar {
     padding: 0;
   }
@@ -486,11 +484,9 @@ footer {
   .search-sm-bar {
     width: 200px;
   }
-
 }
 
-
-@media(max-width:376px) {
+@media (max-width: 376px) {
   .search-sm-bar {
     width: 170px;
   }
