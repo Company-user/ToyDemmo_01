@@ -104,14 +104,13 @@
 //修改 gutters --end
 
 .product-carousel-item {
-  height: 400px;
+  height: 500px;
 }
 
-@media(max-width:768px) {
+@media (max-width: 768px) {
   .product-carousel-item {
     height: 300px;
   }
-
 }
 
 .bg-cover {
@@ -301,7 +300,6 @@
 }
 
 .add-shoppingCar {
-
   .modal-footer,
   .modal-header {
     justify-content: center;

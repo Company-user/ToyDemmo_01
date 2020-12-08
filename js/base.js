@@ -442,15 +442,40 @@ $(function () {
     });
 
 
-    //漢堡選單
-    $('.showmenu').on('click', function (e) {
-        e.preventDefault();
-        $('body').toggleClass('menu-show');
+    //jq漢堡選單教學
+     $('.showmenu').click(function (event) { 
+        $('.navbar-nav-sm').slideToggle(500); 
     });
-});
-   
 
-    
+//rwd漢堡選單教學
+//    $(document).ready(function() {
+//    $('.showmenu').on('click',  function(e){
+//       e.preventDefault();
+//       $('body').toggleClass('menu-show');
+//   });
+// });
+
+//ben提供
+//     $(function () {
+//       var nav = $('.navbar-nav-sm'),
+//         animateTime = 500,
+//         navLink = $('.showmenu');
+//       navLink.click(function () {
+//         if (nav.height() === 0) {
+//           autoHeightAnimate(nav, 500);
+//         } else {
+//           nav.stop().animate({ height: '0' }, 500);
+//         }
+//       });
+//     })
+
+//     function autoHeightAnimate(element, time) {
+//       var curHeight = element.height()
+//       var autoHeight = element.css('height', 'auto').height(); // Get Auto Height
+//       element.height(curHeight); // Reset to Default Height
+//       element.stop().animate({ height: autoHeight }, time); //    Animate to Auto Height
+//   }
+});
 
 document.querySelector('.nav-layout').innerHTML=nav
 document.querySelector('.footer').innerHTML=footer
@@ -458,4 +483,4 @@ document.querySelector('.fixed-btn').innerHTML=fixedicon
  
 
 
-    
+

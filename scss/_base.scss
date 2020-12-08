@@ -16,7 +16,7 @@ body {
   flex-direction: column;
   min-height: 100vh;
 
-  >article {
+  > article {
     flex: 1;
   }
 }
@@ -376,20 +376,21 @@ footer {
     justify-content: flex-start;
   }
 
-  //設定 position: absolute; left:0; right:0; 讓項目block
+  .sm-navbar-dropdown {
+    position: relative;
+    width: 100%;
+  }
 
   .navbar-nav-sm {
     /*隱藏選單開始*/
-    max-height: 0px;
-    overflow: hidden;
+    display: none;
     /*隱藏選單結束*/
-    transition: max-height 2.3s;
-    margin-top: 1px;
     position: absolute;
-    left: 0;
-    right: 0;
-    top: 82px;
+    width: 100%;
+    top: 3px;
     padding: 0 15px;
+    z-index: 1000;
+    background-color: #fff;
 
     .nav-item {
       border-bottom: 1px solid #f3f3f3;
@@ -398,13 +399,6 @@ footer {
         border-bottom: none;
       }
     }
-  }
-
-  /*jQ點擊後動態在 body 加上 class */
-  .menu-show .navbar-nav-sm {
-    max-height: 1000px;
-    z-index: 1000;
-    background-color: #fff;
   }
 
   .search-group {
@@ -471,7 +465,7 @@ footer {
   }
 
   .navbar-nav-sm {
-    top: 60px;
+    // top: 60px;
   }
 
   .nav-item-dropdown {
