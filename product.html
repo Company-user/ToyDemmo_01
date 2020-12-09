@@ -8,6 +8,7 @@
     <link rel="icon" href="img/layout/logo-icon.svg" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/product.min.css">
 </head>
 
@@ -156,64 +157,35 @@
                     </div>
                 </div>
 
-
                 <div class="col-12 col-lg-9 custom-gutters product-info-1 mt-3">
                     <div class="row ">
                         <div class="col-md-6">
-                            <div id="carouselExampleIndicators" class="carousel slide carousel-fade mb-5"
-                                data-ride="carousel">
-
-                                <div class="carousel-inner product-carousel-inner">
-                                    <div class="carousel-item product-carousel-item active bg-cover"
-                                        style="background-image: url(img/product/carousel-1.jpg)" ;>
-                                    </div>
-
-                                    <div class="carousel-item product-carousel-item bg-cover"
-                                        style="background-image: url(img/product/carousel-2.jpg)" ;>
-                                    </div>
-
-                                    <div class="carousel-item product-carousel-item bg-cover"
-                                        style="background-image: url(img/product/carousel-3.jpg)" ;>
-                                    </div>
-
-                                    <div class="carousel-item product-carousel-item bg-cover"
-                                        style="background-image: url(img/product/carousel-4.jpg)" ;>
-                                    </div>
+                            <div class="swiper-container gallery-top">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide product-slide"
+                                        style="background-image:url('img/product/carousel-1.jpg')"></div>
+                                    <div class="swiper-slide product-slide"
+                                        style="background-image:url('img/product/carousel-2.jpg')"></div>
+                                    <div class="swiper-slide product-slide"
+                                        style="background-image:url('img/product/carousel-3.jpg')"></div>
+                                    <div class="swiper-slide product-slide"
+                                        style="background-image:url('img/product/carousel-4.jpg')"></div>
                                 </div>
+                                <div class="swiper-button-next swiper-button-white"></div>
+                                <div class="swiper-button-prev swiper-button-white"></div>
+                            </div>
 
-                                <ol class="carousel-indicators product-click-icon-position">
-                                    <a class="carousel-control-prev" href="#carouselExampleIndicators"
-                                        style="position: static; width:60%;" role="button" data-slide="prev">
-                                        <span class="carousel-control-prev-icon" aria-hidden="true">
-                                            <img src="img/index/arrow-left.svg" alt="">
-                                        </span>
-                                        <span class="sr-only">Previous</span>
-                                    </a>
-                                    <li data-target="#carouselExampleIndicators" data-slide-to="0"
-                                        class="active product-click-icon"
-                                        style="background-image: url(img/product/img-s-1.jpg); width: 1000px; height: 80px;">
-                                    </li>
-                                    <li data-target="#carouselExampleIndicators" data-slide-to="0"
-                                        class="product-click-icon"
-                                        style="background-image: url(img/product/img-s-2.jpg); width: 1000px; height: 80px;">
-                                    </li>
-                                    <li data-target="#carouselExampleIndicators" data-slide-to="0"
-                                        class="product-click-icon"
-                                        style="background-image: url(img/product/img-s-3.jpg); width: 1000px; height: 80px;">
-                                    </li>
-                                    <li data-target="#carouselExampleIndicators" data-slide-to="0"
-                                        class="product-click-icon"
-                                        style="background-image: url(img/product/img-s-4.jpg); width: 1000px; height: 80px;">
-                                    </li>
-
-                                    <a class="carousel-control-next" href="#carouselExampleIndicators"
-                                        style="position: static;  width:60%;" role="button" data-slide="next">
-                                        <span class="carousel-control-next-icon" aria-hidden="true">
-                                            <img src="img/index/arrow-right.svg" alt="">
-                                        </span>
-                                        <span class="sr-only">Next</span>
-                                    </a>
-                                </ol>
+                            <div class="swiper-container gallery-thumbs">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide product-slide"
+                                        style="background-image:url('img/product/img-s-1.jpg')"></div>
+                                    <div class="swiper-slide product-slide"
+                                        style="background-image:url('img/product/img-s-2.jpg')"></div>
+                                    <div class="swiper-slide product-slide"
+                                        style="background-image:url('img/product/img-s-3.jpg')"></div>
+                                    <div class="swiper-slide product-slide"
+                                        style="background-image:url('img/product/img-s-4.jpg')"></div>
+                                </div>
                             </div>
                         </div>
 
@@ -392,61 +364,64 @@
                             <ul>
                                 <li>商品尺寸因樣式、測量基準不同，會略有誤差，請以實品為準。</li>
                                 <li>商品顏色會因電腦螢幕設定而略有色差，請以實品為準。</li>
-
                             </ul>
                         </div>
                     </div>
 
                     <div class="procuct-record mt-5">
                         <h4>瀏覽紀錄</h4>
+                        <div class="swiper-container swiper-record">
+                            <div class="swiper-wrapper">
+                                <div class="row">
+                                    <div class="col-md-3 custom-gutters swiper-slide">
+                                        <div class="card card-shadow">
+                                            <img src="img/product/Record-1.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <p class="title">S30cm 紙箱情境 胡迪 玩具總動員</p>
+                                                <div class="price-sm">NT$2,500</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 custom-gutters swiper-slide">
+                                        <div class="card card-shadow">
+                                            <img src="img/product/Record-2.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <p class="title">S30cm 紙箱情境 胡迪 玩具總動員</p>
+                                                <div class="price-sm">NT$2,500</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 custom-gutters swiper-slide">
+                                        <div class="card card-shadow">
+                                            <img src="img/product/Record-1.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <p class="title">S30cm 紙箱情境 胡迪 玩具總動員</p>
+                                                <div class="price-sm">NT$2,500</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 custom-gutters swiper-slide">
+                                        <div class="card card-shadow">
+                                            <img src="img/product/Record-2.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <p class="title">S30cm 紙箱情境 胡迪 玩具總動員</p>
+                                                <div class="price-sm">NT$2,500</div>
+                                            </div>
+                                        </div>
+                                    </div>
 
-                        <div class="row">
-                            <div class="col-md-3">
-                                <div class="card card-shadow">
-                                    <img src="img/product/Record-1.jpg" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <p class="title">S30cm 紙箱情境 胡迪 玩具總動員</p>
-                                        <div class="price-sm">NT$2,500</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="card card-shadow">
-                                    <img src="img/product/Record-2.jpg" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <p class="title">S30cm 紙箱情境 胡迪 玩具總動員</p>
-                                        <div class="price-sm">NT$2,500</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="card card-shadow">
-                                    <img src="img/product/Record-1.jpg" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <p class="title">S30cm 紙箱情境 胡迪 玩具總動員</p>
-                                        <div class="price-sm">NT$2,500</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="card card-shadow">
-                                    <img src="img/product/Record-2.jpg" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <p class="title">S30cm 紙箱情境 胡迪 玩具總動員</p>
-                                        <div class="price-sm">NT$2,500</div>
-                                    </div>
+
+
                                 </div>
                             </div>
                         </div>
-
-
                     </div>
 
                     <div class="procuct-record mt-3">
                         <h4>本分類熱銷</h4>
 
                         <div class="row mb-5">
-                            <div class="col-md-3">
+                            <div class="col-md-3 custom-gutters">
                                 <div class="card card-shadow">
                                     <img src="img/product/hot-1.jpg" class="card-img-top" alt="...">
                                     <div class="card-body ">
@@ -455,7 +430,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3">
+                            <div class="col-md-3 custom-gutters">
                                 <div class="card card-shadow">
                                     <img src="img/product/hot-2.jpg" class="card-img-top" alt="...">
                                     <div class="card-body">
@@ -464,7 +439,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3">
+                            <div class="col-md-3 custom-gutters">
                                 <div class="card card-shadow">
                                     <img src="img/product/hot-1.jpg" class="card-img-top" alt="...">
                                     <div class="card-body">
@@ -473,7 +448,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3">
+                            <div class="col-md-3 custom-gutters">
                                 <div class="card card-shadow">
                                     <img src="img/product/hot-2.jpg" class="card-img-top" alt="...">
                                     <div class="card-body">
@@ -487,15 +462,40 @@
                 </div>
             </div>
         </section>
-
     </div>
 
     <div class="fixed-btn"></div>
     <footer class="footer"></footer>
     <script src="js/jquery.slim.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="js/base.js"></script>
+
+    <script>
+        const mySwiper = new Swiper('.gallery-top', {
+            loop: true,
+            thumbs: {
+                swiper: {
+                    el: '.gallery-thumbs',
+                    spaceBetween: 10,
+                    slidesPerView: 3,
+                    freeMode: true,
+                },
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+
+        //const mySwiper2 為區塊命稱,才不會影響上層
+        const mySwiper2 = new Swiper('.swiper-record', {
+            slidesPerView: 2,
+            spaceBetween: 10,
+        });
+
+    </script>
 
 </body>
 
