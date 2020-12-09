@@ -129,7 +129,6 @@
   .page-item-main {
     width: 24%;
     vertical-align: middle;
-    // border: 1px solid #dee2e6;
   }
 
   p {
@@ -168,6 +167,7 @@
 
 @media (max-width: 768px) {
   .main-btn {
+
     .warning-btn,
     .warning-btn-active {
       padding: 10px;
@@ -275,6 +275,7 @@
     h4 {
       font-size: 16px;
     }
+
     .title {
       font-size: 14px;
     }
@@ -282,6 +283,7 @@
 }
 
 .add-shoppingCar {
+
   .modal-footer,
   .modal-header {
     justify-content: center;
@@ -362,3 +364,4 @@
 .swiper-button-prev {
   color: #f1f1f1;
 }
+
