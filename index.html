@@ -7,6 +7,7 @@
     <title>Toy_Demo1</title>
     <link rel="icon" href="img/layout/logo-icon.svg" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/index.min.css">
 </head>
@@ -15,7 +16,7 @@
     <nav class="nav-layout"></nav>
 
     <header>
-        <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel">
+        <!-- <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel">
             <div class="carousel-inner header-carousel-inner">
                 <div class="carousel-item active header-carousel-item bg-cover"
                     style="background-image: url(img/index/banner.jpg);">
@@ -50,6 +51,35 @@
                     <span class="sr-only">Next</span>
                 </a>
             </ol>
+        </div> -->
+
+
+        <div class="swiper-container banner-top">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide active header-carousel-item bg-cover"
+                    style="background-image: url(img/index/banner.jpg);">
+                </div>
+                <div class="swiper-slide header-carousel-item bg-cover"
+                    style="background-image: url(img/index/banner-2.jpg);">
+                </div>
+                <div class="swiper-slide header-carousel-item bg-cover"
+                    style="background-image: url(img/index/banner-3.jpg);">
+                </div>
+            </div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next swiper-button-white"></div>
+            <div class="swiper-button-prev swiper-button-white"></div>
+        </div>
+
+        <div class="swiper-container banner-inner">
+            <div class="swiper-wrapper header-click-wrapper">
+                <div class="swiper-slide header-click-bottom" style="background-image: url(img/index/banner-s-1.jpg);">
+                </div>
+                <div class="swiper-slide header-click-bottom" style="background-image: url(img/index/banner-s-2.jpg);">
+                </div>
+                <div class="swiper-slide header-click-bottom" style="background-image: url(img/index/banner-s-3.jpg);">
+                </div>
+            </div>
         </div>
     </header>
 
@@ -522,12 +552,44 @@
     </section>
     <div class="fixed-btn"></div>
     <footer class="footer"></footer>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="js/jquery.slim.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="js/fixed-icon.js"></script>
     <script src="js/base.js"></script>
 
+    <script>
+        const mySwiper = new Swiper('.banner-top', {
+            loop: true,
+            thumbs: {
+                swiper: {
+                    el: '.banner-inner',
+                    slidesPerView: 3,
+                    freeMode: true,
+                    slidesPerView: 'auto',
+                },
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+        });
+
+        // var thumbsSwiper = new Swiper('#thumbs', {
+        //     spaceBetween: 10,
+        //     slidesPerView: 4,
+        //     watchSlidesVisibility: true,//防止不可点击
+        // })
+        // var gallerySwiper = new Swiper('#gallery', {
+        //     spaceBetween: 10,
+        //     thumbs: {
+        //         swiper: thumbsSwiper,
+        //     }
+        // })
+
+    </script>
 </body>
 
 </html>

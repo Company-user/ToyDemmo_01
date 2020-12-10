@@ -167,7 +167,6 @@
 
 @media (max-width: 768px) {
   .main-btn {
-
     .warning-btn,
     .warning-btn-active {
       padding: 10px;
@@ -283,7 +282,6 @@
 }
 
 .add-shoppingCar {
-
   .modal-footer,
   .modal-header {
     justify-content: center;
@@ -365,3 +363,12 @@
   color: #f1f1f1;
 }
 
+.card-item {
+  a {
+    text-decoration: none;
+  }
+}
+
+.swiper-scrollbar-drag {
+  background: rgb(173, 173, 173);
+}
