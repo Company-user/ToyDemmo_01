@@ -167,11 +167,27 @@
 
 @media (max-width: 768px) {
   .main-btn {
+
     .warning-btn,
     .warning-btn-active {
       padding: 10px;
     }
   }
+}
+
+@media(max-width:415px) {
+  .main-btn {
+    position: fixed;
+    bottom: -2px;
+    left: 0;
+    height: 64px;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 -3px 6px rgba(0, 0, 0, 0.18);
+    z-index: 1000;
+    padding: 10px 14px;
+  }
+
 }
 
 .transport {
@@ -282,6 +298,7 @@
 }
 
 .add-shoppingCar {
+
   .modal-footer,
   .modal-header {
     justify-content: center;
